@@ -1,0 +1,13 @@
+|Counter_HOM
+clk => Pstate[1].CLK
+clk => Pstate[0].CLK
+EN => Mux2.IN3
+EN => Mux1.IN2
+EN => Mux1.IN3
+EN => Mux0.IN3
+EN => Mux0.IN2
+EN => Mux1.IN0
+EN => Mux1.IN1
+MAX <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+
+

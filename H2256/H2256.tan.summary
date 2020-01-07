@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 3.826 ns
+From           : din[4]
+To             : IOBus[4]$latch
+From Clock     : --
+To Clock       : busE
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 14.782 ns
+From           : dout[0]$latch
+To             : dout[0]
+From Clock     : busE
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.947 ns
+From           : addrIN[3]
+To             : Addr[3]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.466 ns
+From           : din[6]
+To             : IOBus[6]$latch
+From Clock     : --
+To Clock       : busE
+Failed Paths   : 0
+
+Type           : Clock Setup: 'busE'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 387.15 MHz ( period = 2.583 ns )
+From           : IOBus[4]$latch
+To             : dout[4]$latch
+From Clock     : busE
+To Clock       : busE
+Failed Paths   : 0
+
+Type           : Clock Hold: 'busE'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : IOBus[0]$latch
+To             : dout[0]$latch
+From Clock     : busE
+To Clock       : busE
+Failed Paths   : 8
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 8
+
+--------------------------------------------------------------------------------------
+

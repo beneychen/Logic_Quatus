@@ -1,0 +1,10 @@
+package require ::quartus::project
+
+set_location_assignment PIN_133 -to a
+set_location_assignment PIN_134 -to b
+set_location_assignment PIN_135 -to c
+set_location_assignment PIN_136 -to d
+set_location_assignment PIN_137 -to e
+set_location_assignment PIN_139 -to f
+set_location_assignment PIN_141 -to g
+set_location_assignment PIN_142 -to h

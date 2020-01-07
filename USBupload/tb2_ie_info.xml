@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<AddressBits>32</AddressBits>
+	<DateInvoked>2019/11/11 16:00:17</DateInvoked>
+	<ElapsedTime>3492</ElapsedTime>
+	<IsInternal>false</IsInternal>
+	<Name>quartus</Name>
+	<PeakMemoryUsed>0</PeakMemoryUsed>
+	<QuartusUser>
+		<AlteraUserName/>
+		<FAEContactName/>
+		<UserID>185255126645049.156801067814424</UserID>
+		<UserName>Bankarian</UserName>
+		<TalkbackStatus>
+			<DateSet/>
+			<TalkbackOn>true</TalkbackOn>
+		</TalkbackStatus>
+	</QuartusUser>
+	<Compilation>
+		<CompileID>0</CompileID>
+		<DeviceFamily/>
+		<IncrementalCompilation/>
+		<SOPCBuilderProjectID/>
+		<TopLevelEntityName/>
+	</Compilation>
+	<License>
+		<Edition>Web Edition</Edition>
+		<LicenseHostID/>
+	</License>
+	<SchemaVersion>schema_2008-12-15</SchemaVersion>
+	<ApplicationError>
+		<ErrorMessage>Current editor: , STED, RPW</ErrorMessage>
+		<Line>0</Line>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	0x28746867:
+	0x0e741d3c: edt_sme + 0x51d3c (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x778c)
+	0x76cd47e8: USER32 + 0x247e8 (GetWindowLongW + 0x268)
+	0x76863fe7: GDI32 + 0x3fe7 (GdiReleaseDC + 0x17)
+	0x7333b995: mfc90 + 0x2b995
+	0x750072db: win32u + 0x72db (NtUserReleaseDC + 0xb)
+	0x76ccf0f7: USER32 + 0x1f0f7 (ReleaseDC + 0x27)
+	0x7336acd6: mfc90 + 0x5acd6
+	0x0e7586ae: edt_sme + 0x686ae (??1CxIOFile@@UAE@XZ + 0xcce)
+	0x0e752bb7: edt_sme + 0x62bb7 (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x18607)
+	0x0e742791: edt_sme + 0x52791 (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x81e1)
+	0x0e75af41: edt_sme + 0x6af41 (??1CxIOFile@@UAE@XZ + 0x3561)
+	0x0e758f81: edt_sme + 0x68f81 (??1CxIOFile@@UAE@XZ + 0x15a1)
+	0x73341283: mfc90 + 0x31283
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<QuartusInstallation>
+		<InstallationID>1097499623111.15684602970102</InstallationID>
+		<Version>
+			<Build>184</Build>
+			<BuildSite>SJ</BuildSite>
+			<BuildSuffix/>
+			<Edition>Web Edition</Edition>
+			<ServicePack>1</ServicePack>
+			<VersionNumber>9</VersionNumber>
+		</Version>
+	</QuartusInstallation>
+	<ProjectRevision>
+		<ProjectName/>
+		<Revision/>
+	</ProjectRevision>
+	<Machine>
+		<CPUCountLogical>8</CPUCountLogical>
+		<CPUCountPhysical>1</CPUCountPhysical>
+		<CPUSpeed>1800</CPUSpeed>
+		<Hostname>DESKTOP-DPKORI4</Hostname>
+		<OS>Windows Vista</OS>
+		<OSAddressBits>64</OSAddressBits>
+		<OSVersion>6.2</OSVersion>
+		<Platform>windows</Platform>
+		<ScreenResolution>unknown</ScreenResolution>
+		<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+		<TotalVirtualRAM>0</TotalVirtualRAM>
+		<NIC>
+			<Address>a87d12043939</Address>
+		</NIC>
+		<NIC>
+			<Address>00ff88133ec7</Address>
+		</NIC>
+		<NIC>
+			<Address>ca22a2d9581a</Address>
+		</NIC>
+		<NIC>
+			<Address>a87d12043936</Address>
+		</NIC>
+		<NIC>
+			<Address>aa7d12043935</Address>
+		</NIC>
+	</Machine>
+</ProgramExecution>
+

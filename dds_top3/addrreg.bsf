@@ -1,0 +1,83 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 336 112)
+	(text "addrreg" (rect 5 0 41 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Clk" (rect 0 0 16 12)(font "Arial" ))
+		(text "Clk" (rect 21 27 37 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "fwords[fwords_width-1..0]" (rect 0 0 126 12)(font "Arial" ))
+		(text "fwords[fwords_width-1..0]" (rect 21 43 147 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pwords[pwords_width-1..0]" (rect 0 0 128 12)(font "Arial" ))
+		(text "pwords[pwords_width-1..0]" (rect 21 59 149 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 320 32)
+		(output)
+		(text "addressout[addr_width-1..0]" (rect 0 0 135 12)(font "Arial" ))
+		(text "addressout[addr_width-1..0]" (rect 164 27 299 39)(font "Arial" ))
+		(line (pt 320 32)(pt 304 32)(line_width 3))
+	)
+	(parameter
+		"fwords_width"
+		"20"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"pwords_width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"fadder_width"
+		"24"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"padder_width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"addr_width"
+		"10"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 304 80)(line_width 1))
+	)
+	(annotation_block (parameter)(rect 336 -64 436 16))
+)

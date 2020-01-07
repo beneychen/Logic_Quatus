@@ -1,0 +1,358 @@
+Classic Timing Analyzer report for USBupload_top
+Sat Nov 16 11:17:48 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk'
+  7. Clock Hold: 'clk'
+  8. tsu
+  9. tco
+ 10. th
+ 11. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                                                            ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+--------------------------------------------+-------------------------------------+------------+----------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                                    ; From                                       ; To                                  ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+--------------------------------------------+-------------------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A                                      ; None          ; 5.674 ns                                       ; ntxe                                       ; USBupload:inst|fstate.wait_nTXE_low ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A                                      ; None          ; 13.502 ns                                      ; USBupload:inst|dout[1]                     ; d[1]                                ; clk        ; --       ; 0            ;
+; Worst-case th                ; N/A                                      ; None          ; 0.460 ns                                       ; d[5]                                       ; USBupload:inst|temp[5]              ; --         ; clk      ; 0            ;
+; Clock Setup: 'clk'           ; N/A                                      ; None          ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.latch_data_from_host ; USBupload:inst|fstate.wait_nTXE_low ; clk        ; clk      ; 0            ;
+; Clock Hold: 'clk'            ; Not operational: Clock Skew > Data Delay ; None          ; N/A                                            ; USBupload:inst|fstate.set_WR_high          ; USBupload:inst|temp[5]              ; clk        ; clk      ; 10           ;
+; Total number of failed paths ;                                          ;               ;                                                ;                                            ;                                     ;            ;          ; 10           ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+--------------------------------------------+-------------------------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP2C5T144C8        ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                                                                    ;
++-------+------------------------------------------------+--------------------------------------------+-------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                                       ; To                                  ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+--------------------------------------------+-------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.latch_data_from_host ; USBupload:inst|fstate.wait_nTXE_low ; clk        ; clk      ; None                        ; None                      ; 0.763 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.send_data_host       ; USBupload:inst|fstate.wait_nRXF_low ; clk        ; clk      ; None                        ; None                      ; 0.751 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[7]                     ; USBupload:inst|dout[7]              ; clk        ; clk      ; None                        ; None                      ; 0.573 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[3]                     ; USBupload:inst|dout[3]              ; clk        ; clk      ; None                        ; None                      ; 0.578 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[5]                     ; USBupload:inst|dout[5]              ; clk        ; clk      ; None                        ; None                      ; 0.583 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[1]                     ; USBupload:inst|dout[1]              ; clk        ; clk      ; None                        ; None                      ; 0.585 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[2]                     ; USBupload:inst|dout[2]              ; clk        ; clk      ; None                        ; None                      ; 0.569 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[0]                     ; USBupload:inst|dout[0]              ; clk        ; clk      ; None                        ; None                      ; 0.584 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[4]                     ; USBupload:inst|dout[4]              ; clk        ; clk      ; None                        ; None                      ; 0.578 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|temp[6]                     ; USBupload:inst|dout[6]              ; clk        ; clk      ; None                        ; None                      ; 0.586 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.wait_nTXE_low        ; USBupload:inst|fstate.set_WR_high   ; clk        ; clk      ; None                        ; None                      ; 0.769 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.wait_nRXF_low        ; USBupload:inst|fstate.set_nRD_low   ; clk        ; clk      ; None                        ; None                      ; 0.758 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.wait_nRXF_low        ; USBupload:inst|fstate.wait_nRXF_low ; clk        ; clk      ; None                        ; None                      ; 0.501 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; USBupload:inst|fstate.wait_nTXE_low        ; USBupload:inst|fstate.wait_nTXE_low ; clk        ; clk      ; None                        ; None                      ; 0.501 ns                ;
++-------+------------------------------------------------+--------------------------------------------+-------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'clk'                                                                                                                                                                                                                      ;
++------------------------------------------+-----------------------------------+--------------------------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From                              ; To                                         ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+-----------------------------------+--------------------------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[5]                     ; clk        ; clk      ; None                       ; None                       ; 1.422 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[6]                     ; clk        ; clk      ; None                       ; None                       ; 1.435 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[7]                     ; clk        ; clk      ; None                       ; None                       ; 1.702 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[2]                     ; clk        ; clk      ; None                       ; None                       ; 2.305 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[4]                     ; clk        ; clk      ; None                       ; None                       ; 2.311 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[0]                     ; clk        ; clk      ; None                       ; None                       ; 2.560 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[3]                     ; clk        ; clk      ; None                       ; None                       ; 2.870 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|temp[1]                     ; clk        ; clk      ; None                       ; None                       ; 2.871 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_WR_high ; USBupload:inst|fstate.send_data_host       ; clk        ; clk      ; None                       ; None                       ; 0.795 ns                 ;
+; Not operational: Clock Skew > Data Delay ; USBupload:inst|fstate.set_nRD_low ; USBupload:inst|fstate.latch_data_from_host ; clk        ; clk      ; None                       ; None                       ; 0.925 ns                 ;
++------------------------------------------+-----------------------------------+--------------------------------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; tsu                                                                                       ;
++-------+--------------+------------+------+-------------------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From ; To                                  ; To Clock ;
++-------+--------------+------------+------+-------------------------------------+----------+
+; N/A   ; None         ; 5.674 ns   ; ntxe ; USBupload:inst|fstate.wait_nTXE_low ; clk      ;
+; N/A   ; None         ; 5.372 ns   ; ntxe ; USBupload:inst|fstate.set_WR_high   ; clk      ;
+; N/A   ; None         ; 5.211 ns   ; nrxf ; USBupload:inst|fstate.wait_nRXF_low ; clk      ;
+; N/A   ; None         ; 4.960 ns   ; nrxf ; USBupload:inst|fstate.set_nRD_low   ; clk      ;
+; N/A   ; None         ; 1.610 ns   ; d[0] ; USBupload:inst|temp[0]              ; clk      ;
+; N/A   ; None         ; 1.313 ns   ; d[1] ; USBupload:inst|temp[1]              ; clk      ;
+; N/A   ; None         ; 1.283 ns   ; d[2] ; USBupload:inst|temp[2]              ; clk      ;
+; N/A   ; None         ; 1.088 ns   ; d[6] ; USBupload:inst|temp[6]              ; clk      ;
+; N/A   ; None         ; 1.038 ns   ; d[4] ; USBupload:inst|temp[4]              ; clk      ;
+; N/A   ; None         ; 0.960 ns   ; d[7] ; USBupload:inst|temp[7]              ; clk      ;
+; N/A   ; None         ; 0.754 ns   ; d[5] ; USBupload:inst|temp[5]              ; clk      ;
+; N/A   ; None         ; 0.553 ns   ; d[3] ; USBupload:inst|temp[3]              ; clk      ;
++-------+--------------+------------+------+-------------------------------------+----------+
+
+
++----------------------------------------------------------------------------------------------------+
+; tco                                                                                                ;
++-------+--------------+------------+--------------------------------------------+------+------------+
+; Slack ; Required tco ; Actual tco ; From                                       ; To   ; From Clock ;
++-------+--------------+------------+--------------------------------------------+------+------------+
+; N/A   ; None         ; 13.502 ns  ; USBupload:inst|dout[1]                     ; d[1] ; clk        ;
+; N/A   ; None         ; 13.493 ns  ; USBupload:inst|dout[0]                     ; d[0] ; clk        ;
+; N/A   ; None         ; 13.491 ns  ; USBupload:inst|dout[2]                     ; d[2] ; clk        ;
+; N/A   ; None         ; 13.181 ns  ; USBupload:inst|dout[5]                     ; d[5] ; clk        ;
+; N/A   ; None         ; 13.171 ns  ; USBupload:inst|dout[3]                     ; d[3] ; clk        ;
+; N/A   ; None         ; 13.171 ns  ; USBupload:inst|dout[4]                     ; d[4] ; clk        ;
+; N/A   ; None         ; 13.165 ns  ; USBupload:inst|dout[6]                     ; d[6] ; clk        ;
+; N/A   ; None         ; 12.768 ns  ; USBupload:inst|dout[7]                     ; d[7] ; clk        ;
+; N/A   ; None         ; 9.788 ns   ; USBupload:inst|fstate.latch_data_from_host ; nrd  ; clk        ;
+; N/A   ; None         ; 9.327 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[0] ; clk        ;
+; N/A   ; None         ; 9.327 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[1] ; clk        ;
+; N/A   ; None         ; 9.327 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[2] ; clk        ;
+; N/A   ; None         ; 8.789 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[0] ; clk        ;
+; N/A   ; None         ; 8.789 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[1] ; clk        ;
+; N/A   ; None         ; 8.789 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[2] ; clk        ;
+; N/A   ; None         ; 8.665 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[7] ; clk        ;
+; N/A   ; None         ; 8.646 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[5] ; clk        ;
+; N/A   ; None         ; 8.646 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[6] ; clk        ;
+; N/A   ; None         ; 8.638 ns   ; USBupload:inst|fstate.set_nRD_low          ; nrd  ; clk        ;
+; N/A   ; None         ; 8.636 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[3] ; clk        ;
+; N/A   ; None         ; 8.636 ns   ; USBupload:inst|fstate.latch_data_from_host ; d[4] ; clk        ;
+; N/A   ; None         ; 8.334 ns   ; USBupload:inst|fstate.set_WR_high          ; d[0] ; clk        ;
+; N/A   ; None         ; 8.334 ns   ; USBupload:inst|fstate.set_WR_high          ; d[1] ; clk        ;
+; N/A   ; None         ; 8.334 ns   ; USBupload:inst|fstate.set_WR_high          ; d[2] ; clk        ;
+; N/A   ; None         ; 8.277 ns   ; USBupload:inst|fstate.set_WR_high          ; nwr  ; clk        ;
+; N/A   ; None         ; 8.127 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[7] ; clk        ;
+; N/A   ; None         ; 8.108 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[5] ; clk        ;
+; N/A   ; None         ; 8.108 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[6] ; clk        ;
+; N/A   ; None         ; 8.098 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[3] ; clk        ;
+; N/A   ; None         ; 8.098 ns   ; USBupload:inst|fstate.set_nRD_low          ; d[4] ; clk        ;
+; N/A   ; None         ; 7.672 ns   ; USBupload:inst|fstate.set_WR_high          ; d[7] ; clk        ;
+; N/A   ; None         ; 7.653 ns   ; USBupload:inst|fstate.set_WR_high          ; d[5] ; clk        ;
+; N/A   ; None         ; 7.653 ns   ; USBupload:inst|fstate.set_WR_high          ; d[6] ; clk        ;
+; N/A   ; None         ; 7.643 ns   ; USBupload:inst|fstate.set_WR_high          ; d[3] ; clk        ;
+; N/A   ; None         ; 7.643 ns   ; USBupload:inst|fstate.set_WR_high          ; d[4] ; clk        ;
++-------+--------------+------------+--------------------------------------------+------+------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; th                                                                                              ;
++---------------+-------------+-----------+------+-------------------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From ; To                                  ; To Clock ;
++---------------+-------------+-----------+------+-------------------------------------+----------+
+; N/A           ; None        ; 0.460 ns  ; d[5] ; USBupload:inst|temp[5]              ; clk      ;
+; N/A           ; None        ; 0.395 ns  ; d[3] ; USBupload:inst|temp[3]              ; clk      ;
+; N/A           ; None        ; 0.296 ns  ; d[7] ; USBupload:inst|temp[7]              ; clk      ;
+; N/A           ; None        ; 0.171 ns  ; d[4] ; USBupload:inst|temp[4]              ; clk      ;
+; N/A           ; None        ; 0.126 ns  ; d[6] ; USBupload:inst|temp[6]              ; clk      ;
+; N/A           ; None        ; -0.047 ns ; d[1] ; USBupload:inst|temp[1]              ; clk      ;
+; N/A           ; None        ; -0.084 ns ; d[2] ; USBupload:inst|temp[2]              ; clk      ;
+; N/A           ; None        ; -0.344 ns ; d[0] ; USBupload:inst|temp[0]              ; clk      ;
+; N/A           ; None        ; -4.694 ns ; nrxf ; USBupload:inst|fstate.set_nRD_low   ; clk      ;
+; N/A           ; None        ; -4.945 ns ; nrxf ; USBupload:inst|fstate.wait_nRXF_low ; clk      ;
+; N/A           ; None        ; -5.106 ns ; ntxe ; USBupload:inst|fstate.set_WR_high   ; clk      ;
+; N/A           ; None        ; -5.408 ns ; ntxe ; USBupload:inst|fstate.wait_nTXE_low ; clk      ;
++---------------+-------------+-----------+------+-------------------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Nov 16 11:17:47 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off USBupload_top -c USBupload_top --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "USBupload:inst|dout[7]" is a latch
+    Warning: Node "USBupload:inst|temp[7]" is a latch
+    Warning: Node "USBupload:inst|dout[6]" is a latch
+    Warning: Node "USBupload:inst|temp[6]" is a latch
+    Warning: Node "USBupload:inst|dout[5]" is a latch
+    Warning: Node "USBupload:inst|temp[5]" is a latch
+    Warning: Node "USBupload:inst|dout[4]" is a latch
+    Warning: Node "USBupload:inst|temp[4]" is a latch
+    Warning: Node "USBupload:inst|dout[3]" is a latch
+    Warning: Node "USBupload:inst|temp[3]" is a latch
+    Warning: Node "USBupload:inst|dout[2]" is a latch
+    Warning: Node "USBupload:inst|temp[2]" is a latch
+    Warning: Node "USBupload:inst|dout[1]" is a latch
+    Warning: Node "USBupload:inst|temp[1]" is a latch
+    Warning: Node "USBupload:inst|dout[0]" is a latch
+    Warning: Node "USBupload:inst|temp[0]" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Warning: Found 2 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected ripple clock "USBupload:inst|fstate.latch_data_from_host" as buffer
+    Info: Detected ripple clock "USBupload:inst|fstate.send_data_host" as buffer
+Info: Clock "clk" Internal fmax is restricted to 340.02 MHz between source register "USBupload:inst|fstate.latch_data_from_host" and destination register "USBupload:inst|fstate.wait_nTXE_low"
+    Info: fmax restricted to clock pin edge rate 2.941 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 0.763 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X2_Y4_N1; Fanout = 4; REG Node = 'USBupload:inst|fstate.latch_data_from_host'
+            Info: 2: + IC(0.449 ns) + CELL(0.206 ns) = 0.655 ns; Loc. = LCCOMB_X2_Y4_N26; Fanout = 1; COMB Node = 'USBupload:inst|Selector1~0'
+            Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 0.763 ns; Loc. = LCFF_X2_Y4_N27; Fanout = 2; REG Node = 'USBupload:inst|fstate.wait_nTXE_low'
+            Info: Total cell delay = 0.314 ns ( 41.15 % )
+            Info: Total interconnect delay = 0.449 ns ( 58.85 % )
+        Info: - Smallest clock skew is -1.283 ns
+            Info: + Shortest clock path from clock "clk" to destination register is 2.749 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+                Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.253 ns; Loc. = CLKCTRL_G6; Fanout = 4; COMB Node = 'clk~clkctrl'
+                Info: 3: + IC(0.830 ns) + CELL(0.666 ns) = 2.749 ns; Loc. = LCFF_X2_Y4_N27; Fanout = 2; REG Node = 'USBupload:inst|fstate.wait_nTXE_low'
+                Info: Total cell delay = 1.776 ns ( 64.61 % )
+                Info: Total interconnect delay = 0.973 ns ( 35.39 % )
+            Info: - Longest clock path from clock "clk" to source register is 4.032 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+                Info: 2: + IC(2.256 ns) + CELL(0.666 ns) = 4.032 ns; Loc. = LCFF_X2_Y4_N1; Fanout = 4; REG Node = 'USBupload:inst|fstate.latch_data_from_host'
+                Info: Total cell delay = 1.776 ns ( 44.05 % )
+                Info: Total interconnect delay = 2.256 ns ( 55.95 % )
+        Info: + Micro clock to output delay of source is 0.304 ns
+        Info: + Micro setup delay of destination is -0.040 ns
+Warning: Circuit may not operate. Detected 10 non-operational path(s) clocked by clock "clk" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "USBupload:inst|fstate.set_WR_high" and destination pin or register "USBupload:inst|temp[5]" for clock "clk" (Hold time is 4.013 ns)
+    Info: + Largest clock skew is 5.739 ns
+        Info: + Longest clock path from clock "clk" to destination register is 8.488 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+            Info: 2: + IC(2.256 ns) + CELL(0.970 ns) = 4.336 ns; Loc. = LCFF_X2_Y4_N1; Fanout = 4; REG Node = 'USBupload:inst|fstate.latch_data_from_host'
+            Info: 3: + IC(2.605 ns) + CELL(0.000 ns) = 6.941 ns; Loc. = CLKCTRL_G5; Fanout = 8; COMB Node = 'USBupload:inst|fstate.latch_data_from_host~clkctrl'
+            Info: 4: + IC(1.341 ns) + CELL(0.206 ns) = 8.488 ns; Loc. = LCCOMB_X2_Y4_N18; Fanout = 1; REG Node = 'USBupload:inst|temp[5]'
+            Info: Total cell delay = 2.286 ns ( 26.93 % )
+            Info: Total interconnect delay = 6.202 ns ( 73.07 % )
+        Info: - Shortest clock path from clock "clk" to source register is 2.749 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+            Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.253 ns; Loc. = CLKCTRL_G6; Fanout = 4; COMB Node = 'clk~clkctrl'
+            Info: 3: + IC(0.830 ns) + CELL(0.666 ns) = 2.749 ns; Loc. = LCFF_X2_Y4_N31; Fanout = 11; REG Node = 'USBupload:inst|fstate.set_WR_high'
+            Info: Total cell delay = 1.776 ns ( 64.61 % )
+            Info: Total interconnect delay = 0.973 ns ( 35.39 % )
+    Info: - Micro clock to output delay of source is 0.304 ns
+    Info: - Shortest register to register delay is 1.422 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X2_Y4_N31; Fanout = 11; REG Node = 'USBupload:inst|fstate.set_WR_high'
+        Info: 2: + IC(0.479 ns) + CELL(0.206 ns) = 0.685 ns; Loc. = LCCOMB_X2_Y4_N14; Fanout = 1; COMB Node = 'inst2[5]~2'
+        Info: 3: + IC(0.371 ns) + CELL(0.366 ns) = 1.422 ns; Loc. = LCCOMB_X2_Y4_N18; Fanout = 1; REG Node = 'USBupload:inst|temp[5]'
+        Info: Total cell delay = 0.572 ns ( 40.23 % )
+        Info: Total interconnect delay = 0.850 ns ( 59.77 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: Delay path is controlled by inverted clocks -- if clock duty cycle is 50%, fmax is divided by two
+Info: tsu for register "USBupload:inst|fstate.wait_nTXE_low" (data pin = "ntxe", clock pin = "clk") is 5.674 ns
+    Info: + Longest pin to register delay is 8.463 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.955 ns) = 0.955 ns; Loc. = PIN_4; Fanout = 2; PIN Node = 'ntxe'
+        Info: 2: + IC(6.749 ns) + CELL(0.651 ns) = 8.355 ns; Loc. = LCCOMB_X2_Y4_N26; Fanout = 1; COMB Node = 'USBupload:inst|Selector1~0'
+        Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 8.463 ns; Loc. = LCFF_X2_Y4_N27; Fanout = 2; REG Node = 'USBupload:inst|fstate.wait_nTXE_low'
+        Info: Total cell delay = 1.714 ns ( 20.25 % )
+        Info: Total interconnect delay = 6.749 ns ( 79.75 % )
+    Info: + Micro setup delay of destination is -0.040 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 2.749 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+        Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.253 ns; Loc. = CLKCTRL_G6; Fanout = 4; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.830 ns) + CELL(0.666 ns) = 2.749 ns; Loc. = LCFF_X2_Y4_N27; Fanout = 2; REG Node = 'USBupload:inst|fstate.wait_nTXE_low'
+        Info: Total cell delay = 1.776 ns ( 64.61 % )
+        Info: Total interconnect delay = 0.973 ns ( 35.39 % )
+Info: tco from clock "clk" to destination pin "d[1]" through register "USBupload:inst|dout[1]" is 13.502 ns
+    Info: + Longest clock path from clock "clk" to source register is 8.757 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+        Info: 2: + IC(2.256 ns) + CELL(0.970 ns) = 4.336 ns; Loc. = LCFF_X2_Y4_N7; Fanout = 2; REG Node = 'USBupload:inst|fstate.send_data_host'
+        Info: 3: + IC(2.705 ns) + CELL(0.000 ns) = 7.041 ns; Loc. = CLKCTRL_G1; Fanout = 8; COMB Node = 'USBupload:inst|fstate.send_data_host~clkctrl'
+        Info: 4: + IC(1.350 ns) + CELL(0.366 ns) = 8.757 ns; Loc. = LCCOMB_X2_Y6_N24; Fanout = 1; REG Node = 'USBupload:inst|dout[1]'
+        Info: Total cell delay = 2.446 ns ( 27.93 % )
+        Info: Total interconnect delay = 6.311 ns ( 72.07 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 4.745 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCCOMB_X2_Y6_N24; Fanout = 1; REG Node = 'USBupload:inst|dout[1]'
+        Info: 2: + IC(1.689 ns) + CELL(3.056 ns) = 4.745 ns; Loc. = PIN_8; Fanout = 0; PIN Node = 'd[1]'
+        Info: Total cell delay = 3.056 ns ( 64.40 % )
+        Info: Total interconnect delay = 1.689 ns ( 35.60 % )
+Info: th for register "USBupload:inst|temp[5]" (data pin = "d[5]", clock pin = "clk") is 0.460 ns
+    Info: + Longest clock path from clock "clk" to destination register is 8.488 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_91; Fanout = 3; CLK Node = 'clk'
+        Info: 2: + IC(2.256 ns) + CELL(0.970 ns) = 4.336 ns; Loc. = LCFF_X2_Y4_N1; Fanout = 4; REG Node = 'USBupload:inst|fstate.latch_data_from_host'
+        Info: 3: + IC(2.605 ns) + CELL(0.000 ns) = 6.941 ns; Loc. = CLKCTRL_G5; Fanout = 8; COMB Node = 'USBupload:inst|fstate.latch_data_from_host~clkctrl'
+        Info: 4: + IC(1.341 ns) + CELL(0.206 ns) = 8.488 ns; Loc. = LCCOMB_X2_Y4_N18; Fanout = 1; REG Node = 'USBupload:inst|temp[5]'
+        Info: Total cell delay = 2.286 ns ( 26.93 % )
+        Info: Total interconnect delay = 6.202 ns ( 73.07 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 8.028 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = PIN_26; Fanout = 1; PIN Node = 'd[5]'
+        Info: 2: + IC(0.000 ns) + CELL(0.955 ns) = 0.955 ns; Loc. = IOC_X0_Y5_N2; Fanout = 1; COMB Node = 'd~2'
+        Info: 3: + IC(6.017 ns) + CELL(0.319 ns) = 7.291 ns; Loc. = LCCOMB_X2_Y4_N14; Fanout = 1; COMB Node = 'inst2[5]~2'
+        Info: 4: + IC(0.371 ns) + CELL(0.366 ns) = 8.028 ns; Loc. = LCCOMB_X2_Y4_N18; Fanout = 1; REG Node = 'USBupload:inst|temp[5]'
+        Info: Total cell delay = 1.640 ns ( 20.43 % )
+        Info: Total interconnect delay = 6.388 ns ( 79.57 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 196 megabytes
+    Info: Processing ended: Sat Nov 16 11:17:48 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

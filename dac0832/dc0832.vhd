@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dc0832 is
+port(data: in std_logic_vector(0 to 7);
+		udata: out std_logic_vector(0 to 7));
+end dc0832;
+
+architecture behav of dc0832 is
+begin 
+	udata <=data;
+end behav;

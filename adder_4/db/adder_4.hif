@@ -1,0 +1,131 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+7
+3344
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+adder_4
+# storage
+db|adder_4.(0).cnf
+db|adder_4.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+adder_4.vhd
+c5924a1efc8df875c129b1eebcd3b1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+full_adder
+# storage
+db|adder_4.(1).cnf
+db|adder_4.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+full_adder.vhd
+c94fcbff32d6253eecfa6cdf55d18af
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+full_adder:BIT0
+full_adder:BIT1
+full_adder:BIT2
+full_adder:BIT3
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+half_adder
+# storage
+db|adder_4.(2).cnf
+db|adder_4.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+half_adder.vhd
+329bd2e0f3ce73954f24254955cfc3e1
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+full_adder:BIT0|half_adder:HA1
+full_adder:BIT0|half_adder:HA2
+full_adder:BIT1|half_adder:HA1
+full_adder:BIT1|half_adder:HA2
+full_adder:BIT2|half_adder:HA1
+full_adder:BIT2|half_adder:HA2
+full_adder:BIT3|half_adder:HA1
+full_adder:BIT3|half_adder:HA2
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

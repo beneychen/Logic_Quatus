@@ -1,0 +1,121 @@
+|adder_4
+B[0] => full_adder:BIT0.x
+B[1] => full_adder:BIT1.x
+B[2] => full_adder:BIT2.x
+B[3] => full_adder:BIT3.x
+A[0] => full_adder:BIT0.y
+A[1] => full_adder:BIT1.y
+A[2] => full_adder:BIT2.y
+A[3] => full_adder:BIT3.y
+C0 => full_adder:BIT0.z
+S[0] <= full_adder:BIT0.s
+S[1] <= full_adder:BIT1.s
+S[2] <= full_adder:BIT2.s
+S[3] <= full_adder:BIT3.s
+C4 <= full_adder:BIT3.c
+
+
+|adder_4|full_adder:BIT0
+x => half_adder:HA1.x
+y => half_adder:HA1.y
+z => half_adder:HA2.y
+s <= half_adder:HA2.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT0|half_adder:HA1
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT0|half_adder:HA2
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT1
+x => half_adder:HA1.x
+y => half_adder:HA1.y
+z => half_adder:HA2.y
+s <= half_adder:HA2.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT1|half_adder:HA1
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT1|half_adder:HA2
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT2
+x => half_adder:HA1.x
+y => half_adder:HA1.y
+z => half_adder:HA2.y
+s <= half_adder:HA2.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT2|half_adder:HA1
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT2|half_adder:HA2
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT3
+x => half_adder:HA1.x
+y => half_adder:HA1.y
+z => half_adder:HA2.y
+s <= half_adder:HA2.s
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT3|half_adder:HA1
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4|full_adder:BIT3|half_adder:HA2
+x => c~0.IN0
+x => s~0.IN0
+y => c~0.IN1
+y => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

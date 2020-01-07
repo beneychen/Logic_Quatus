@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 14 15:41:41 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : tr74194
+Top-level Entity Name : tr74194
+Family : Cyclone II
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

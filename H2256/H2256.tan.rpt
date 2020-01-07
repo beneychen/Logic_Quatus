@@ -1,0 +1,332 @@
+Classic Timing Analyzer report for H2256
+Fri Nov 22 14:50:48 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'busE'
+  7. Clock Hold: 'busE'
+  8. tsu
+  9. tco
+ 10. tpd
+ 11. th
+ 12. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                           ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+----------------+----------------+------------+----------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                                    ; From           ; To             ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+----------------+----------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A                                      ; None          ; 3.826 ns                                       ; din[4]         ; IOBus[4]$latch ; --         ; busE     ; 0            ;
+; Worst-case tco               ; N/A                                      ; None          ; 14.782 ns                                      ; dout[0]$latch  ; dout[0]        ; busE       ; --       ; 0            ;
+; Worst-case tpd               ; N/A                                      ; None          ; 12.947 ns                                      ; addrIN[3]      ; Addr[3]        ; --         ; --       ; 0            ;
+; Worst-case th                ; N/A                                      ; None          ; 0.466 ns                                       ; din[6]         ; IOBus[6]$latch ; --         ; busE     ; 0            ;
+; Clock Setup: 'busE'          ; N/A                                      ; None          ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[4]$latch ; dout[4]$latch  ; busE       ; busE     ; 0            ;
+; Clock Hold: 'busE'           ; Not operational: Clock Skew > Data Delay ; None          ; N/A                                            ; IOBus[0]$latch ; dout[0]$latch  ; busE       ; busE     ; 8            ;
+; Total number of failed paths ;                                          ;               ;                                                ;                ;                ;            ;          ; 8            ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+----------------+----------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP1C6Q240C8        ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; busE            ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'busE'                                                                                                                                                                                 ;
++-------+------------------------------------------------+----------------+---------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From           ; To            ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+----------------+---------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[4]$latch ; dout[4]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[0]$latch ; dout[0]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[1]$latch ; dout[1]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[2]$latch ; dout[2]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[3]$latch ; dout[3]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[5]$latch ; dout[5]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[6]$latch ; dout[6]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
+; N/A   ; Restricted to 387.15 MHz ( period = 2.583 ns ) ; IOBus[7]$latch ; dout[7]$latch ; busE       ; busE     ; None                        ; None                      ; 0.296 ns                ;
++-------+------------------------------------------------+----------------+---------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'busE'                                                                                                                                                                     ;
++------------------------------------------+----------------+---------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From           ; To            ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+----------------+---------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; IOBus[0]$latch ; dout[0]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[2]$latch ; dout[2]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[3]$latch ; dout[3]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[5]$latch ; dout[5]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[6]$latch ; dout[6]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[7]$latch ; dout[7]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[1]$latch ; dout[1]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
+; Not operational: Clock Skew > Data Delay ; IOBus[4]$latch ; dout[4]$latch ; busE       ; busE     ; None                       ; None                       ; 0.296 ns                 ;
++------------------------------------------+----------------+---------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++------------------------------------------------------------------------+
+; tsu                                                                    ;
++-------+--------------+------------+--------+----------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From   ; To             ; To Clock ;
++-------+--------------+------------+--------+----------------+----------+
+; N/A   ; None         ; 3.826 ns   ; din[4] ; IOBus[4]$latch ; busE     ;
+; N/A   ; None         ; 2.807 ns   ; din[1] ; IOBus[1]$latch ; busE     ;
+; N/A   ; None         ; 2.441 ns   ; din[3] ; IOBus[3]$latch ; busE     ;
+; N/A   ; None         ; 2.419 ns   ; din[2] ; IOBus[2]$latch ; busE     ;
+; N/A   ; None         ; 2.003 ns   ; din[0] ; IOBus[0]$latch ; busE     ;
+; N/A   ; None         ; 1.323 ns   ; din[5] ; IOBus[5]$latch ; busE     ;
+; N/A   ; None         ; 1.193 ns   ; din[7] ; IOBus[7]$latch ; busE     ;
+; N/A   ; None         ; 0.661 ns   ; din[6] ; IOBus[6]$latch ; busE     ;
++-------+--------------+------------+--------+----------------+----------+
+
+
++----------------------------------------------------------------------------+
+; tco                                                                        ;
++-------+--------------+------------+----------------+----------+------------+
+; Slack ; Required tco ; Actual tco ; From           ; To       ; From Clock ;
++-------+--------------+------------+----------------+----------+------------+
+; N/A   ; None         ; 14.782 ns  ; dout[0]$latch  ; dout[0]  ; busE       ;
+; N/A   ; None         ; 14.210 ns  ; dout[4]$latch  ; dout[4]  ; busE       ;
+; N/A   ; None         ; 13.250 ns  ; IOBus[6]$latch ; IOBus[6] ; busE       ;
+; N/A   ; None         ; 13.247 ns  ; dout[6]$latch  ; dout[6]  ; busE       ;
+; N/A   ; None         ; 13.217 ns  ; IOBus[1]$latch ; IOBus[1] ; busE       ;
+; N/A   ; None         ; 13.175 ns  ; IOBus[3]$latch ; IOBus[3] ; busE       ;
+; N/A   ; None         ; 12.936 ns  ; dout[7]$latch  ; dout[7]  ; busE       ;
+; N/A   ; None         ; 12.920 ns  ; IOBus[2]$latch ; IOBus[2] ; busE       ;
+; N/A   ; None         ; 12.783 ns  ; IOBus[0]$latch ; IOBus[0] ; busE       ;
+; N/A   ; None         ; 12.615 ns  ; dout[5]$latch  ; dout[5]  ; busE       ;
+; N/A   ; None         ; 12.612 ns  ; IOBus[5]$latch ; IOBus[5] ; busE       ;
+; N/A   ; None         ; 12.605 ns  ; IOBus[7]$latch ; IOBus[7] ; busE       ;
+; N/A   ; None         ; 11.550 ns  ; dout[3]$latch  ; dout[3]  ; busE       ;
+; N/A   ; None         ; 11.503 ns  ; dout[2]$latch  ; dout[2]  ; busE       ;
+; N/A   ; None         ; 11.321 ns  ; dout[1]$latch  ; dout[1]  ; busE       ;
+; N/A   ; None         ; 11.206 ns  ; IOBus[4]$latch ; IOBus[4] ; busE       ;
++-------+--------------+------------+----------------+----------+------------+
+
+
++-------------------------------------------------------------------+
+; tpd                                                               ;
++-------+-------------------+-----------------+-----------+---------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From      ; To      ;
++-------+-------------------+-----------------+-----------+---------+
+; N/A   ; None              ; 12.947 ns       ; addrIN[3] ; Addr[3] ;
+; N/A   ; None              ; 12.644 ns       ; addrIN[0] ; Addr[0] ;
+; N/A   ; None              ; 12.636 ns       ; addrIN[1] ; Addr[1] ;
+; N/A   ; None              ; 12.631 ns       ; addrIN[2] ; Addr[2] ;
+; N/A   ; None              ; 12.589 ns       ; WE        ; WEc     ;
+; N/A   ; None              ; 12.123 ns       ; WE        ; OEc     ;
+; N/A   ; None              ; 10.522 ns       ; addrIN[6] ; Addr[6] ;
+; N/A   ; None              ; 9.715 ns        ; addrIN[4] ; Addr[4] ;
+; N/A   ; None              ; 9.430 ns        ; addrIN[7] ; Addr[7] ;
+; N/A   ; None              ; 9.377 ns        ; addrIN[5] ; Addr[5] ;
++-------+-------------------+-----------------+-----------+---------+
+
+
++------------------------------------------------------------------------------+
+; th                                                                           ;
++---------------+-------------+-----------+--------+----------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From   ; To             ; To Clock ;
++---------------+-------------+-----------+--------+----------------+----------+
+; N/A           ; None        ; 0.466 ns  ; din[6] ; IOBus[6]$latch ; busE     ;
+; N/A           ; None        ; -0.066 ns ; din[7] ; IOBus[7]$latch ; busE     ;
+; N/A           ; None        ; -0.369 ns ; din[5] ; IOBus[5]$latch ; busE     ;
+; N/A           ; None        ; -1.049 ns ; din[0] ; IOBus[0]$latch ; busE     ;
+; N/A           ; None        ; -1.310 ns ; din[2] ; IOBus[2]$latch ; busE     ;
+; N/A           ; None        ; -1.487 ns ; din[3] ; IOBus[3]$latch ; busE     ;
+; N/A           ; None        ; -1.680 ns ; din[1] ; IOBus[1]$latch ; busE     ;
+; N/A           ; None        ; -2.872 ns ; din[4] ; IOBus[4]$latch ; busE     ;
++---------------+-------------+-----------+--------+----------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Nov 22 14:50:48 2019
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off H2256 -c H2256 --timing_analysis_only
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "dout[0]$latch" is a latch
+    Warning: Node "IOBus[0]$latch" is a latch
+    Warning: Node "dout[1]$latch" is a latch
+    Warning: Node "IOBus[1]$latch" is a latch
+    Warning: Node "dout[2]$latch" is a latch
+    Warning: Node "IOBus[2]$latch" is a latch
+    Warning: Node "dout[3]$latch" is a latch
+    Warning: Node "IOBus[3]$latch" is a latch
+    Warning: Node "dout[4]$latch" is a latch
+    Warning: Node "IOBus[4]$latch" is a latch
+    Warning: Node "dout[5]$latch" is a latch
+    Warning: Node "IOBus[5]$latch" is a latch
+    Warning: Node "dout[6]$latch" is a latch
+    Warning: Node "IOBus[6]$latch" is a latch
+    Warning: Node "dout[7]$latch" is a latch
+    Warning: Node "IOBus[7]$latch" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "busE" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+Info: Clock "busE" Internal fmax is restricted to 387.15 MHz between source register "IOBus[4]$latch" and destination register "dout[4]$latch"
+    Info: fmax restricted to clock pin edge rate 2.583 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 0.296 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X15_Y20_N3; Fanout = 2; REG Node = 'IOBus[4]$latch'
+            Info: 2: + IC(0.182 ns) + CELL(0.114 ns) = 0.296 ns; Loc. = LC_X15_Y20_N4; Fanout = 1; REG Node = 'dout[4]$latch'
+            Info: Total cell delay = 0.114 ns ( 38.51 % )
+            Info: Total interconnect delay = 0.182 ns ( 61.49 % )
+        Info: - Smallest clock skew is 0.485 ns
+            Info: + Shortest clock path from clock "busE" to destination register is 7.893 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+                Info: 2: + IC(5.828 ns) + CELL(0.590 ns) = 7.893 ns; Loc. = LC_X15_Y20_N4; Fanout = 1; REG Node = 'dout[4]$latch'
+                Info: Total cell delay = 2.065 ns ( 26.16 % )
+                Info: Total interconnect delay = 5.828 ns ( 73.84 % )
+            Info: - Longest clock path from clock "busE" to source register is 7.408 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+                Info: 2: + IC(5.819 ns) + CELL(0.114 ns) = 7.408 ns; Loc. = LC_X15_Y20_N3; Fanout = 2; REG Node = 'IOBus[4]$latch'
+                Info: Total cell delay = 1.589 ns ( 21.45 % )
+                Info: Total interconnect delay = 5.819 ns ( 78.55 % )
+        Info: + Micro clock to output delay of source is 0.000 ns
+        Info: + Micro setup delay of destination is 1.319 ns
+        Info: Delay path is controlled by inverted clocks -- if clock duty cycle is 50%, fmax is divided by two
+Warning: Circuit may not operate. Detected 8 non-operational path(s) clocked by clock "busE" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "IOBus[0]$latch" and destination pin or register "dout[0]$latch" for clock "busE" (Hold time is 190 ps)
+    Info: + Largest clock skew is 0.486 ns
+        Info: + Longest clock path from clock "busE" to destination register is 7.907 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+            Info: 2: + IC(5.842 ns) + CELL(0.590 ns) = 7.907 ns; Loc. = LC_X31_Y16_N4; Fanout = 1; REG Node = 'dout[0]$latch'
+            Info: Total cell delay = 2.065 ns ( 26.12 % )
+            Info: Total interconnect delay = 5.842 ns ( 73.88 % )
+        Info: - Shortest clock path from clock "busE" to source register is 7.421 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+            Info: 2: + IC(5.832 ns) + CELL(0.114 ns) = 7.421 ns; Loc. = LC_X31_Y16_N3; Fanout = 2; REG Node = 'IOBus[0]$latch'
+            Info: Total cell delay = 1.589 ns ( 21.41 % )
+            Info: Total interconnect delay = 5.832 ns ( 78.59 % )
+    Info: - Micro clock to output delay of source is 0.000 ns
+    Info: - Shortest register to register delay is 0.296 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X31_Y16_N3; Fanout = 2; REG Node = 'IOBus[0]$latch'
+        Info: 2: + IC(0.182 ns) + CELL(0.114 ns) = 0.296 ns; Loc. = LC_X31_Y16_N4; Fanout = 1; REG Node = 'dout[0]$latch'
+        Info: Total cell delay = 0.114 ns ( 38.51 % )
+        Info: Total interconnect delay = 0.182 ns ( 61.49 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: Delay path is controlled by inverted clocks -- if clock duty cycle is 50%, fmax is divided by two
+Info: tsu for register "IOBus[4]$latch" (data pin = "din[4]", clock pin = "busE") is 3.826 ns
+    Info: + Longest pin to register delay is 10.280 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_108; Fanout = 1; PIN Node = 'din[4]'
+        Info: 2: + IC(8.215 ns) + CELL(0.590 ns) = 10.280 ns; Loc. = LC_X15_Y20_N3; Fanout = 2; REG Node = 'IOBus[4]$latch'
+        Info: Total cell delay = 2.065 ns ( 20.09 % )
+        Info: Total interconnect delay = 8.215 ns ( 79.91 % )
+    Info: + Micro setup delay of destination is 0.954 ns
+    Info: - Shortest clock path from clock "busE" to destination register is 7.408 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+        Info: 2: + IC(5.819 ns) + CELL(0.114 ns) = 7.408 ns; Loc. = LC_X15_Y20_N3; Fanout = 2; REG Node = 'IOBus[4]$latch'
+        Info: Total cell delay = 1.589 ns ( 21.45 % )
+        Info: Total interconnect delay = 5.819 ns ( 78.55 % )
+Info: tco from clock "busE" to destination pin "dout[0]" through register "dout[0]$latch" is 14.782 ns
+    Info: + Longest clock path from clock "busE" to source register is 7.907 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+        Info: 2: + IC(5.842 ns) + CELL(0.590 ns) = 7.907 ns; Loc. = LC_X31_Y16_N4; Fanout = 1; REG Node = 'dout[0]$latch'
+        Info: Total cell delay = 2.065 ns ( 26.12 % )
+        Info: Total interconnect delay = 5.842 ns ( 73.88 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 6.875 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC_X31_Y16_N4; Fanout = 1; REG Node = 'dout[0]$latch'
+        Info: 2: + IC(4.767 ns) + CELL(2.108 ns) = 6.875 ns; Loc. = PIN_76; Fanout = 0; PIN Node = 'dout[0]'
+        Info: Total cell delay = 2.108 ns ( 30.66 % )
+        Info: Total interconnect delay = 4.767 ns ( 69.34 % )
+Info: Longest tpd from source pin "addrIN[3]" to destination pin "Addr[3]" is 12.947 ns
+    Info: 1: + IC(0.000 ns) + CELL(1.469 ns) = 1.469 ns; Loc. = PIN_121; Fanout = 1; PIN Node = 'addrIN[3]'
+    Info: 2: + IC(9.370 ns) + CELL(2.108 ns) = 12.947 ns; Loc. = PIN_220; Fanout = 0; PIN Node = 'Addr[3]'
+    Info: Total cell delay = 3.577 ns ( 27.63 % )
+    Info: Total interconnect delay = 9.370 ns ( 72.37 % )
+Info: th for register "IOBus[6]$latch" (data pin = "din[6]", clock pin = "busE") is 0.466 ns
+    Info: + Longest clock path from clock "busE" to destination register is 7.373 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_117; Fanout = 16; CLK Node = 'busE'
+        Info: 2: + IC(5.784 ns) + CELL(0.114 ns) = 7.373 ns; Loc. = LC_X27_Y1_N1; Fanout = 2; REG Node = 'IOBus[6]$latch'
+        Info: Total cell delay = 1.589 ns ( 21.55 % )
+        Info: Total interconnect delay = 5.784 ns ( 78.45 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 6.907 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.475 ns) = 1.475 ns; Loc. = PIN_106; Fanout = 1; PIN Node = 'din[6]'
+        Info: 2: + IC(4.990 ns) + CELL(0.442 ns) = 6.907 ns; Loc. = LC_X27_Y1_N1; Fanout = 2; REG Node = 'IOBus[6]$latch'
+        Info: Total cell delay = 1.917 ns ( 27.75 % )
+        Info: Total interconnect delay = 4.990 ns ( 72.25 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 194 megabytes
+    Info: Processing ended: Fri Nov 22 14:50:48 2019
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

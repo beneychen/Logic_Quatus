@@ -1,0 +1,6 @@
+|usb_download
+rxf => Selector0.IN2
+rxf => reg_fstate.set_rd_low.DATAB
+rd <= process_1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

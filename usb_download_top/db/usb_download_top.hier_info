@@ -1,0 +1,65 @@
+|usb_download_top
+rd_out <= rd.DB_MAX_OUTPUT_PORT_TYPE
+clk => usb_download:inst.clock
+clk => my_dff:inst1.clk
+reset => usb_download:inst.reset
+rxf => usb_download:inst.rxf
+dout[0] <= my_dff:inst1.COUT[0]
+dout[1] <= my_dff:inst1.COUT[1]
+dout[2] <= my_dff:inst1.COUT[2]
+dout[3] <= my_dff:inst1.COUT[3]
+dout[4] <= my_dff:inst1.COUT[4]
+dout[5] <= my_dff:inst1.COUT[5]
+dout[6] <= my_dff:inst1.COUT[6]
+dout[7] <= my_dff:inst1.COUT[7]
+din[0] => my_dff:inst1.CIN[0]
+din[1] => my_dff:inst1.CIN[1]
+din[2] => my_dff:inst1.CIN[2]
+din[3] => my_dff:inst1.CIN[3]
+din[4] => my_dff:inst1.CIN[4]
+din[5] => my_dff:inst1.CIN[5]
+din[6] => my_dff:inst1.CIN[6]
+din[7] => my_dff:inst1.CIN[7]
+
+
+|usb_download_top|usb_download:inst
+rxf => Selector0.IN2
+rxf => reg_fstate.set_rd_low.DATAB
+rd <= process_1~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|usb_download_top|my_dff:inst1
+clk => COUT[7]~reg0.CLK
+clk => COUT[6]~reg0.CLK
+clk => COUT[5]~reg0.CLK
+clk => COUT[4]~reg0.CLK
+clk => COUT[3]~reg0.CLK
+clk => COUT[2]~reg0.CLK
+clk => COUT[1]~reg0.CLK
+clk => COUT[0]~reg0.CLK
+EN => COUT[0]~reg0.ENA
+EN => COUT[1]~reg0.ENA
+EN => COUT[2]~reg0.ENA
+EN => COUT[3]~reg0.ENA
+EN => COUT[4]~reg0.ENA
+EN => COUT[5]~reg0.ENA
+EN => COUT[6]~reg0.ENA
+EN => COUT[7]~reg0.ENA
+CIN[0] => COUT[0]~reg0.DATAIN
+CIN[1] => COUT[1]~reg0.DATAIN
+CIN[2] => COUT[2]~reg0.DATAIN
+CIN[3] => COUT[3]~reg0.DATAIN
+CIN[4] => COUT[4]~reg0.DATAIN
+CIN[5] => COUT[5]~reg0.DATAIN
+CIN[6] => COUT[6]~reg0.DATAIN
+CIN[7] => COUT[7]~reg0.DATAIN
+COUT[0] <= COUT[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[1] <= COUT[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[2] <= COUT[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[3] <= COUT[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[4] <= COUT[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[5] <= COUT[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[6] <= COUT[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+COUT[7] <= COUT[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

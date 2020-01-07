@@ -1,0 +1,11 @@
+|slowDown
+clk => cnt[5].CLK
+clk => cnt[4].CLK
+clk => cnt[3].CLK
+clk => cnt[2].CLK
+clk => cnt[1].CLK
+clk => cnt[0].CLK
+clk => dout~reg0.CLK
+dout <= dout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

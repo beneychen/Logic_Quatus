@@ -1,0 +1,430 @@
+Simulator report for FIFO_REG
+Tue Nov 26 10:44:30 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 2.0 us       ;
+; Simulation Netlist Size     ; 225 nodes    ;
+; Simulation Coverage         ;      84.44 % ;
+; Total Number of Transitions ; 1995         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      84.44 % ;
+; Total nodes checked                                 ; 225          ;
+; Total output ports checked                          ; 225          ;
+; Total output ports with complete 1/0-value coverage ; 190          ;
+; Total output ports with no 1/0-value coverage       ; 9            ;
+; Total output ports with no 1-value coverage         ; 9            ;
+; Total output ports with no 0-value coverage         ; 35           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                      ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |FIFO_REG|o_RData[0]~0                                                ; |FIFO_REG|o_RData[0]~0                                                ; out0             ;
+; |FIFO_REG|Control~0                                                   ; |FIFO_REG|Control~0                                                   ; out0             ;
+; |FIFO_REG|Control~1                                                   ; |FIFO_REG|Control~1                                                   ; out0             ;
+; |FIFO_REG|wr_index~0                                                  ; |FIFO_REG|wr_index~0                                                  ; out              ;
+; |FIFO_REG|wr_index~1                                                  ; |FIFO_REG|wr_index~1                                                  ; out              ;
+; |FIFO_REG|Control~2                                                   ; |FIFO_REG|Control~2                                                   ; out0             ;
+; |FIFO_REG|rd_index~0                                                  ; |FIFO_REG|rd_index~0                                                  ; out              ;
+; |FIFO_REG|rd_index~1                                                  ; |FIFO_REG|rd_index~1                                                  ; out              ;
+; |FIFO_REG|Qsize~0                                                     ; |FIFO_REG|Qsize~0                                                     ; out              ;
+; |FIFO_REG|Qsize~1                                                     ; |FIFO_REG|Qsize~1                                                     ; out              ;
+; |FIFO_REG|Qsize~2                                                     ; |FIFO_REG|Qsize~2                                                     ; out              ;
+; |FIFO_REG|Qsize~3                                                     ; |FIFO_REG|Qsize~3                                                     ; out              ;
+; |FIFO_REG|rd_index~2                                                  ; |FIFO_REG|rd_index~2                                                  ; out              ;
+; |FIFO_REG|rd_index~3                                                  ; |FIFO_REG|rd_index~3                                                  ; out              ;
+; |FIFO_REG|Qsize~4                                                     ; |FIFO_REG|Qsize~4                                                     ; out              ;
+; |FIFO_REG|Qsize~5                                                     ; |FIFO_REG|Qsize~5                                                     ; out              ;
+; |FIFO_REG|Qsize~6                                                     ; |FIFO_REG|Qsize~6                                                     ; out              ;
+; |FIFO_REG|Qsize~7                                                     ; |FIFO_REG|Qsize~7                                                     ; out              ;
+; |FIFO_REG|Qsize~8                                                     ; |FIFO_REG|Qsize~8                                                     ; out              ;
+; |FIFO_REG|Qsize~9                                                     ; |FIFO_REG|Qsize~9                                                     ; out              ;
+; |FIFO_REG|Qsize~10                                                    ; |FIFO_REG|Qsize~10                                                    ; out              ;
+; |FIFO_REG|Qsize~11                                                    ; |FIFO_REG|Qsize~11                                                    ; out              ;
+; |FIFO_REG|wr_index~2                                                  ; |FIFO_REG|wr_index~2                                                  ; out              ;
+; |FIFO_REG|wr_index~3                                                  ; |FIFO_REG|wr_index~3                                                  ; out              ;
+; |FIFO_REG|rd_index~4                                                  ; |FIFO_REG|rd_index~4                                                  ; out              ;
+; |FIFO_REG|rd_index~5                                                  ; |FIFO_REG|rd_index~5                                                  ; out              ;
+; |FIFO_REG|rd_index~6                                                  ; |FIFO_REG|rd_index~6                                                  ; out              ;
+; |FIFO_REG|rd_index~7                                                  ; |FIFO_REG|rd_index~7                                                  ; out              ;
+; |FIFO_REG|Qsize~12                                                    ; |FIFO_REG|Qsize~12                                                    ; out              ;
+; |FIFO_REG|Qsize~13                                                    ; |FIFO_REG|Qsize~13                                                    ; out              ;
+; |FIFO_REG|Qsize~14                                                    ; |FIFO_REG|Qsize~14                                                    ; out              ;
+; |FIFO_REG|Qsize~15                                                    ; |FIFO_REG|Qsize~15                                                    ; out              ;
+; |FIFO_REG|wr_index~4                                                  ; |FIFO_REG|wr_index~4                                                  ; out              ;
+; |FIFO_REG|wr_index~5                                                  ; |FIFO_REG|wr_index~5                                                  ; out              ;
+; |FIFO_REG|rd_index~8                                                  ; |FIFO_REG|rd_index~8                                                  ; out              ;
+; |FIFO_REG|rd_index~9                                                  ; |FIFO_REG|rd_index~9                                                  ; out              ;
+; |FIFO_REG|Queue~0                                                     ; |FIFO_REG|Queue~0                                                     ; out              ;
+; |FIFO_REG|rd_index[0]                                                 ; |FIFO_REG|rd_index[0]                                                 ; regout           ;
+; |FIFO_REG|o_RData[3]~reg0                                             ; |FIFO_REG|o_RData[3]~reg0                                             ; regout           ;
+; |FIFO_REG|o_RData[2]~reg0                                             ; |FIFO_REG|o_RData[2]~reg0                                             ; regout           ;
+; |FIFO_REG|o_RData[1]~reg0                                             ; |FIFO_REG|o_RData[1]~reg0                                             ; regout           ;
+; |FIFO_REG|o_RData[0]~1                                                ; |FIFO_REG|o_RData[0]~1                                                ; out0             ;
+; |FIFO_REG|o_RData[0]~en                                               ; |FIFO_REG|o_RData[0]~en                                               ; regout           ;
+; |FIFO_REG|o_RData[1]~en                                               ; |FIFO_REG|o_RData[1]~en                                               ; regout           ;
+; |FIFO_REG|o_RData[1]~3                                                ; |FIFO_REG|o_RData[1]~3                                                ; out              ;
+; |FIFO_REG|o_RData[2]~en                                               ; |FIFO_REG|o_RData[2]~en                                               ; regout           ;
+; |FIFO_REG|o_RData[2]~4                                                ; |FIFO_REG|o_RData[2]~4                                                ; out              ;
+; |FIFO_REG|o_RData[3]~en                                               ; |FIFO_REG|o_RData[3]~en                                               ; regout           ;
+; |FIFO_REG|o_RData[3]~5                                                ; |FIFO_REG|o_RData[3]~5                                                ; out              ;
+; |FIFO_REG|rd_index[1]                                                 ; |FIFO_REG|rd_index[1]                                                 ; regout           ;
+; |FIFO_REG|wr_index[0]                                                 ; |FIFO_REG|wr_index[0]                                                 ; regout           ;
+; |FIFO_REG|wr_index[1]                                                 ; |FIFO_REG|wr_index[1]                                                 ; regout           ;
+; |FIFO_REG|Qsize[0]                                                    ; |FIFO_REG|Qsize[0]                                                    ; regout           ;
+; |FIFO_REG|Qsize[1]                                                    ; |FIFO_REG|Qsize[1]                                                    ; regout           ;
+; |FIFO_REG|Qsize[2]                                                    ; |FIFO_REG|Qsize[2]                                                    ; regout           ;
+; |FIFO_REG|in_rst                                                      ; |FIFO_REG|in_rst                                                      ; out              ;
+; |FIFO_REG|clk                                                         ; |FIFO_REG|clk                                                         ; out              ;
+; |FIFO_REG|in_WE                                                       ; |FIFO_REG|in_WE                                                       ; out              ;
+; |FIFO_REG|in_WData[0]                                                 ; |FIFO_REG|in_WData[0]                                                 ; out              ;
+; |FIFO_REG|in_WData[1]                                                 ; |FIFO_REG|in_WData[1]                                                 ; out              ;
+; |FIFO_REG|in_WData[2]                                                 ; |FIFO_REG|in_WData[2]                                                 ; out              ;
+; |FIFO_REG|in_WData[3]                                                 ; |FIFO_REG|in_WData[3]                                                 ; out              ;
+; |FIFO_REG|o_full                                                      ; |FIFO_REG|o_full                                                      ; pin_out          ;
+; |FIFO_REG|in_RE                                                       ; |FIFO_REG|in_RE                                                       ; out              ;
+; |FIFO_REG|o_RData[1]                                                  ; |FIFO_REG|o_RData[1]                                                  ; pin_out          ;
+; |FIFO_REG|o_RData[2]                                                  ; |FIFO_REG|o_RData[2]                                                  ; pin_out          ;
+; |FIFO_REG|o_RData[3]                                                  ; |FIFO_REG|o_RData[3]                                                  ; pin_out          ;
+; |FIFO_REG|o_empty                                                     ; |FIFO_REG|o_empty                                                     ; pin_out          ;
+; |FIFO_REG|o_Qsize[0]                                                  ; |FIFO_REG|o_Qsize[0]                                                  ; pin_out          ;
+; |FIFO_REG|o_Qsize[1]                                                  ; |FIFO_REG|o_Qsize[1]                                                  ; pin_out          ;
+; |FIFO_REG|o_Qsize[2]                                                  ; |FIFO_REG|o_Qsize[2]                                                  ; pin_out          ;
+; |FIFO_REG|rtl~0                                                       ; |FIFO_REG|rtl~0                                                       ; out0             ;
+; |FIFO_REG|rtl~1                                                       ; |FIFO_REG|rtl~1                                                       ; out0             ;
+; |FIFO_REG|rtl~2                                                       ; |FIFO_REG|rtl~2                                                       ; out0             ;
+; |FIFO_REG|rtl~3                                                       ; |FIFO_REG|rtl~3                                                       ; out0             ;
+; |FIFO_REG|Queue~9                                                     ; |FIFO_REG|Queue~9                                                     ; regout           ;
+; |FIFO_REG|Queue~29                                                    ; |FIFO_REG|Queue~29                                                    ; out              ;
+; |FIFO_REG|Queue~30                                                    ; |FIFO_REG|Queue~30                                                    ; out              ;
+; |FIFO_REG|Queue~11                                                    ; |FIFO_REG|Queue~11                                                    ; regout           ;
+; |FIFO_REG|Queue~31                                                    ; |FIFO_REG|Queue~31                                                    ; out              ;
+; |FIFO_REG|Queue~33                                                    ; |FIFO_REG|Queue~33                                                    ; out              ;
+; |FIFO_REG|Queue~34                                                    ; |FIFO_REG|Queue~34                                                    ; out              ;
+; |FIFO_REG|Queue~35                                                    ; |FIFO_REG|Queue~35                                                    ; out              ;
+; |FIFO_REG|Queue~40                                                    ; |FIFO_REG|Queue~40                                                    ; out              ;
+; |FIFO_REG|Queue~41                                                    ; |FIFO_REG|Queue~41                                                    ; out              ;
+; |FIFO_REG|Queue~42                                                    ; |FIFO_REG|Queue~42                                                    ; out              ;
+; |FIFO_REG|Queue~43                                                    ; |FIFO_REG|Queue~43                                                    ; out              ;
+; |FIFO_REG|Queue~44                                                    ; |FIFO_REG|Queue~44                                                    ; out0             ;
+; |FIFO_REG|Queue~45                                                    ; |FIFO_REG|Queue~45                                                    ; out0             ;
+; |FIFO_REG|Queue~46                                                    ; |FIFO_REG|Queue~46                                                    ; out0             ;
+; |FIFO_REG|Queue~47                                                    ; |FIFO_REG|Queue~47                                                    ; out0             ;
+; |FIFO_REG|LessThan0~0                                                 ; |FIFO_REG|LessThan0~0                                                 ; out0             ;
+; |FIFO_REG|LessThan0~1                                                 ; |FIFO_REG|LessThan0~1                                                 ; out0             ;
+; |FIFO_REG|LessThan1~0                                                 ; |FIFO_REG|LessThan1~0                                                 ; out0             ;
+; |FIFO_REG|LessThan1~1                                                 ; |FIFO_REG|LessThan1~1                                                 ; out0             ;
+; |FIFO_REG|LessThan1~2                                                 ; |FIFO_REG|LessThan1~2                                                 ; out0             ;
+; |FIFO_REG|LessThan1~3                                                 ; |FIFO_REG|LessThan1~3                                                 ; out0             ;
+; |FIFO_REG|LessThan1~4                                                 ; |FIFO_REG|LessThan1~4                                                 ; out0             ;
+; |FIFO_REG|Add0~0                                                      ; |FIFO_REG|Add0~0                                                      ; out0             ;
+; |FIFO_REG|Add0~1                                                      ; |FIFO_REG|Add0~1                                                      ; out0             ;
+; |FIFO_REG|Add0~2                                                      ; |FIFO_REG|Add0~2                                                      ; out0             ;
+; |FIFO_REG|Add1~0                                                      ; |FIFO_REG|Add1~0                                                      ; out0             ;
+; |FIFO_REG|Add2~0                                                      ; |FIFO_REG|Add2~0                                                      ; out0             ;
+; |FIFO_REG|Add2~1                                                      ; |FIFO_REG|Add2~1                                                      ; out0             ;
+; |FIFO_REG|Add2~2                                                      ; |FIFO_REG|Add2~2                                                      ; out0             ;
+; |FIFO_REG|Add2~3                                                      ; |FIFO_REG|Add2~3                                                      ; out0             ;
+; |FIFO_REG|Add2~4                                                      ; |FIFO_REG|Add2~4                                                      ; out0             ;
+; |FIFO_REG|Add2~5                                                      ; |FIFO_REG|Add2~5                                                      ; out0             ;
+; |FIFO_REG|Add2~6                                                      ; |FIFO_REG|Add2~6                                                      ; out0             ;
+; |FIFO_REG|Add3~0                                                      ; |FIFO_REG|Add3~0                                                      ; out0             ;
+; |FIFO_REG|Equal0~0                                                    ; |FIFO_REG|Equal0~0                                                    ; out0             ;
+; |FIFO_REG|Equal1~0                                                    ; |FIFO_REG|Equal1~0                                                    ; out0             ;
+; |FIFO_REG|Equal2~0                                                    ; |FIFO_REG|Equal2~0                                                    ; out0             ;
+; |FIFO_REG|Equal3~0                                                    ; |FIFO_REG|Equal3~0                                                    ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~1              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~1              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~2              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~2              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~3              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~3              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~4              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~4              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~5              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~5              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~6              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~6              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~7              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~7              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~8              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~8              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~9              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~9              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~10             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~10             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~11             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~11             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~12             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~12             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~13             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~13             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~14             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~14             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~15             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~15             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~16             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~16             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~17             ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~17             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]~1 ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]   ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~0              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~0              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~1              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~1              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~2              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~2              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~3              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~3              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~4              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~4              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~6              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~6              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~7              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~7              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~8              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~8              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~9              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~9              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~10             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~10             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~11             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~11             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~12             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~12             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~14             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~14             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~15             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~15             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~16             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~16             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~17             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~17             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|result_node[0]~1 ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|result_node[0]   ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~0              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~0              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~1              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~1              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~2              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~2              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~3              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~3              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~4              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~4              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~6              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~6              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~7              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~7              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~8              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~8              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|result_node[0]~0 ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~9              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~9              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~10             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~10             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~11             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~11             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~12             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~12             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~14             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~14             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~15             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~15             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~16             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~16             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~17             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~17             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|result_node[0]~1 ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|result_node[0]   ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|result_node[0]   ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~0              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~0              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~1              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~1              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~2              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~2              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~3              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~3              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~4              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~4              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~6              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~6              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~7              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~7              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~8              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~8              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~9              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~9              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~10             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~10             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~11             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~11             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~12             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~12             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~14             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~14             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~15             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~15             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~16             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~16             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~17             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~17             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|result_node[0]~1 ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|result_node[0]~1 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|result_node[0]   ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|result_node[0]   ; out0             ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                         ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |FIFO_REG|Qsize[3]                                                    ; |FIFO_REG|Qsize[3]                                                    ; regout           ;
+; |FIFO_REG|o_Qsize[3]                                                  ; |FIFO_REG|o_Qsize[3]                                                  ; pin_out          ;
+; |FIFO_REG|Queue~15                                                    ; |FIFO_REG|Queue~15                                                    ; regout           ;
+; |FIFO_REG|Queue~19                                                    ; |FIFO_REG|Queue~19                                                    ; regout           ;
+; |FIFO_REG|Queue~39                                                    ; |FIFO_REG|Queue~39                                                    ; out              ;
+; |FIFO_REG|Add0~3                                                      ; |FIFO_REG|Add0~3                                                      ; out0             ;
+; |FIFO_REG|Add0~4                                                      ; |FIFO_REG|Add0~4                                                      ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~0              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~0              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                         ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; Node Name                                                             ; Output Port Name                                                      ; Output Port Type ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+; |FIFO_REG|o_RData[0]~reg0                                             ; |FIFO_REG|o_RData[0]~reg0                                             ; regout           ;
+; |FIFO_REG|o_RData[0]~2                                                ; |FIFO_REG|o_RData[0]~2                                                ; out              ;
+; |FIFO_REG|Qsize[3]                                                    ; |FIFO_REG|Qsize[3]                                                    ; regout           ;
+; |FIFO_REG|o_RData[0]                                                  ; |FIFO_REG|o_RData[0]                                                  ; pin_out          ;
+; |FIFO_REG|o_Qsize[3]                                                  ; |FIFO_REG|o_Qsize[3]                                                  ; pin_out          ;
+; |FIFO_REG|Queue~8                                                     ; |FIFO_REG|Queue~8                                                     ; regout           ;
+; |FIFO_REG|Queue~28                                                    ; |FIFO_REG|Queue~28                                                    ; out              ;
+; |FIFO_REG|Queue~10                                                    ; |FIFO_REG|Queue~10                                                    ; regout           ;
+; |FIFO_REG|Queue~12                                                    ; |FIFO_REG|Queue~12                                                    ; regout           ;
+; |FIFO_REG|Queue~32                                                    ; |FIFO_REG|Queue~32                                                    ; out              ;
+; |FIFO_REG|Queue~13                                                    ; |FIFO_REG|Queue~13                                                    ; regout           ;
+; |FIFO_REG|Queue~14                                                    ; |FIFO_REG|Queue~14                                                    ; regout           ;
+; |FIFO_REG|Queue~15                                                    ; |FIFO_REG|Queue~15                                                    ; regout           ;
+; |FIFO_REG|Queue~16                                                    ; |FIFO_REG|Queue~16                                                    ; regout           ;
+; |FIFO_REG|Queue~36                                                    ; |FIFO_REG|Queue~36                                                    ; out              ;
+; |FIFO_REG|Queue~17                                                    ; |FIFO_REG|Queue~17                                                    ; regout           ;
+; |FIFO_REG|Queue~37                                                    ; |FIFO_REG|Queue~37                                                    ; out              ;
+; |FIFO_REG|Queue~18                                                    ; |FIFO_REG|Queue~18                                                    ; regout           ;
+; |FIFO_REG|Queue~38                                                    ; |FIFO_REG|Queue~38                                                    ; out              ;
+; |FIFO_REG|Queue~19                                                    ; |FIFO_REG|Queue~19                                                    ; regout           ;
+; |FIFO_REG|Queue~39                                                    ; |FIFO_REG|Queue~39                                                    ; out              ;
+; |FIFO_REG|Queue~20                                                    ; |FIFO_REG|Queue~20                                                    ; regout           ;
+; |FIFO_REG|Queue~21                                                    ; |FIFO_REG|Queue~21                                                    ; regout           ;
+; |FIFO_REG|Queue~22                                                    ; |FIFO_REG|Queue~22                                                    ; regout           ;
+; |FIFO_REG|Queue~23                                                    ; |FIFO_REG|Queue~23                                                    ; regout           ;
+; |FIFO_REG|Add0~3                                                      ; |FIFO_REG|Add0~3                                                      ; out0             ;
+; |FIFO_REG|Add0~4                                                      ; |FIFO_REG|Add0~4                                                      ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~0              ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|_~0              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; |FIFO_REG|lpm_mux:Queue_rtl_3|mux_umc:auto_generated|result_node[0]~0 ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~5              ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~5              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~13             ; |FIFO_REG|lpm_mux:Queue_rtl_2|mux_umc:auto_generated|_~13             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~5              ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~5              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~13             ; |FIFO_REG|lpm_mux:Queue_rtl_1|mux_umc:auto_generated|_~13             ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~5              ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~5              ; out0             ;
+; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~13             ; |FIFO_REG|lpm_mux:Queue_rtl_0|mux_umc:auto_generated|_~13             ; out0             ;
++-----------------------------------------------------------------------+-----------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Nov 26 10:44:29 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off FIFO_REG -c FIFO_REG
+Info: Using vector source file "D:/quartas_workspace/FIFO_REG/FIFO_REG.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "in_WData[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "in_WData[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "in_WData[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "in_WData[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_RData[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_RData[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_RData[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_RData[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[31]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[30]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[29]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[28]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[27]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[26]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[25]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[24]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[23]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[22]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[21]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[20]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[19]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[18]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[17]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[16]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[13]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[12]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[11]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[10]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[9]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[8]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "o_Qsize[4]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      84.44 %
+Info: Number of transitions in simulation is 1995
+Info: Quartus II Simulator was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 162 megabytes
+    Info: Processing ended: Tue Nov 26 10:44:30 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

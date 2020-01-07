@@ -1,0 +1,12 @@
+Fitter Status : Successful - Sat Dec 21 09:39:11 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : myCPU
+Top-level Entity Name : myCPU
+Family : Cyclone
+Device : EP1C3T100C8
+Timing Models : Final
+Total logic elements : 201 / 2,910 ( 7 % )
+Total pins : 17 / 65 ( 26 % )
+Total virtual pins : 0
+Total memory bits : 2,048 / 59,904 ( 3 % )
+Total PLLs : 0 / 1 ( 0 % )

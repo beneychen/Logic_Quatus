@@ -1,0 +1,30 @@
+|mux8_1
+CIN[0] => multi_sel:inst.CIN[0]
+CIN[1] => multi_sel:inst.CIN[1]
+CIN[2] => multi_sel:inst.CIN[2]
+CIN[3] => multi_sel:inst.CIN[3]
+CIN[4] => multi_sel:inst.CIN[4]
+CIN[5] => multi_sel:inst.CIN[5]
+CIN[6] => multi_sel:inst.CIN[6]
+CIN[7] => multi_sel:inst.CIN[7]
+sel[0] => multi_sel:inst.SEL[0]
+sel[1] => multi_sel:inst.SEL[1]
+sel[2] => multi_sel:inst.SEL[2]
+COUT <= multi_sel:inst.COUT
+
+
+|mux8_1|multi_sel:inst
+CIN[0] => Mux0.IN7
+CIN[1] => Mux0.IN6
+CIN[2] => Mux0.IN5
+CIN[3] => Mux0.IN4
+CIN[4] => Mux0.IN3
+CIN[5] => Mux0.IN2
+CIN[6] => Mux0.IN1
+CIN[7] => Mux0.IN0
+SEL[0] => Mux0.IN10
+SEL[1] => Mux0.IN9
+SEL[2] => Mux0.IN8
+COUT <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

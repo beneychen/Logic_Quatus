@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="dds_top3">
+		<CBX_INST_ENTRY INSTANCE_NAME="|dds_top3|addrreg:inst|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_msh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dds_top3|addrreg:inst|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_r8i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|dds_top3|wave_rom3:inst5|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_nv31.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

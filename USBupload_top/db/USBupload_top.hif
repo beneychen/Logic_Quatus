@@ -1,0 +1,106 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+multi_sel|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+USBupload
+# storage
+db|USBupload_top.(1).cnf
+db|USBupload_top.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|USBupload|USBupload.vhd
+e24fbb88411f92ed87a0dc71a2f9249f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+USBupload
+# storage
+db|USBupload_top.(2).cnf
+db|USBupload_top.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+USBupload.vhd
+e24fbb88411f92ed87a0dc71a2f9249f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+USBupload:inst
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+USBupload_top
+# storage
+db|USBupload_top.(0).cnf
+db|USBupload_top.(0).cnf
+# case_insensitive
+# source_file
+USBupload_top.bdf
+20d49b71fbbc35a53c086c9936647cc
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

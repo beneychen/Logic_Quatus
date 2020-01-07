@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+
+entity multi_sel is 
+generic( n: integer := 4	);
+port(	CIN: in std_logic_vector(n-1 downto 0);
+		SEL: in integer range n-1 downto 0;
+		COUT: out std_logic	);
+end multi_sel;
+
+architecture behav of multi_sel is
+begin
+	COUT <= CIN(SEL);
+end behav;
+

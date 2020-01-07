@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="FIFO_REG">
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_REG|lpm_mux:Queue_rtl_0" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_REG|lpm_mux:Queue_rtl_1" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_REG|lpm_mux:Queue_rtl_2" CBX_FILE_NAME="mux_umc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|FIFO_REG|lpm_mux:Queue_rtl_3" CBX_FILE_NAME="mux_umc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

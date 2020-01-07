@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity SM is
+port (
+	clk, EN: in STD_LOGIC;
+	z: out STD_LOGIC
+	);
+end SM;
+
+architecture behav of SM is
+SIGNAL pre: std_logic := '0';
+begin
+	process(clk)
+	begin
+		IF falling_edge(clk) then
+			IF EN='1' then
+				z <= not pre;
+				pre <= not pre;
+			ELSE z <= pre;
+			END IF;
+		end IF;
+	end process;
+end behav;

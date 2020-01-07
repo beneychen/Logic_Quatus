@@ -1,0 +1,94 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x6f422e74:
+	0x0b6397f0: edt_wed + 0x697f0 (?wed_wsf_alloc_string@@YAPAV?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@PAVwed_wsf_lexer_yyFlexLexer@@PBDH@Z + 0x1cd0)
+	0x0b661d6d: edt_wed + 0x91d6d (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0x1178d)
+	0x040313ba: db_vdb + 0x413ba (?erase_range@VDB_COMPRESSION_GENERATOR@@AAIXABV?$_Vector_iterator@UVDB_COMPRESSION_ENTRY@@V?$MEM_STL_ALLOCATOR@UVDB_COMPRESSION_ENTRY@@@@@_Dinkum_std@@0@Z + 0x8a)
+	0x6b8ce2dc: mfc90 + 0x2e2dc
+	0x769d4811: GDI32 + 0x4811 (SetBkMode + 0x21)
+	0x6b8f9e0c: mfc90 + 0x59e0c
+	0x02743df4: GCL_GTO + 0x3df4 (??1GTO_LINE@@UAE@XZ + 0x54)
+	0x0b5e88c7: edt_wed + 0x188c7 (edt_wed_dll_get_template_classes + 0x1de7)
+	0x0ebbfe63:
+	0x00ed5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	0x76507963: gdi32full + 0xa7963 (LPtoDP + 0x63)
+	0x0b6765cb: edt_wed + 0xa65cb (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0x25feb)
+	0x026b4b77: GCL_CGL + 0x4b77 (?draw@CGL_PLANE@@QAIXPAVCDC@@PAVCWnd@@@Z + 0xa7)
+	0x026b4b9b: GCL_CGL + 0x4b9b (?draw@CGL_PLANE@@QAIXPAVCDC@@PAVCWnd@@@Z + 0xcb)
+	0x0b607c7c: edt_wed + 0x37c7c (edt_wed_dll_get_template_classes + 0x2119c)
+	</callstack>
+	<error>Current editor: WED, WED, GED, RPW, STED, STED</error>
+	<date>Tue Dec 10 21:39:52 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X6F422E74
+Current editor: WED, WED, GED, RPW, STED, STED
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x6f422e74:
+	0x0b8097f0: edt_wed + 0x697f0 (?wed_wsf_alloc_string@@YAPAV?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@PAVwed_wsf_lexer_yyFlexLexer@@PBDH@Z + 0x1cd0)
+	0x0b831d6d: edt_wed + 0x91d6d (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0x1178d)
+	0x040613ba: db_vdb + 0x413ba (?erase_range@VDB_COMPRESSION_GENERATOR@@AAIXABV?$_Vector_iterator@UVDB_COMPRESSION_ENTRY@@V?$MEM_STL_ALLOCATOR@UVDB_COMPRESSION_ENTRY@@@@@_Dinkum_std@@0@Z + 0x8a)
+	0x04033e72: db_vdb + 0x13e72 (?vdb_assign_value@@YIXPBVVDB_VALUE@@PAV1@PAVMEM_SEGMENT@@@Z + 0x182)
+	0x64eee2dc: mfc90 + 0x2e2dc
+	0x769d4811: GDI32 + 0x4811 (SetBkMode + 0x21)
+	0x64f19e0c: mfc90 + 0x59e0c
+	0x02703df4: GCL_GTO + 0x3df4 (??1GTO_LINE@@UAE@XZ + 0x54)
+	0x0b7b88c7: edt_wed + 0x188c7 (edt_wed_dll_get_template_classes + 0x1de7)
+	0x0e27d553:
+	0x00f25580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	0x76507963: gdi32full + 0xa7963 (LPtoDP + 0x63)
+	0x0b8465cb: edt_wed + 0xa65cb (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0x25feb)
+	0x026b4b77: GCL_CGL + 0x4b77 (?draw@CGL_PLANE@@QAIXPAVCDC@@PAVCWnd@@@Z + 0xa7)
+	0x026b4b9b: GCL_CGL + 0x4b9b (?draw@CGL_PLANE@@QAIXPAVCDC@@PAVCWnd@@@Z + 0xcb)
+	0x0b7d7c7c: edt_wed + 0x37c7c (edt_wed_dll_get_template_classes + 0x2119c)
+	</callstack>
+	<error>Current editor: WED, WED, RPW, GED, STED, STED, MED, RPW</error>
+	<date>Wed Dec 11 11:00:59 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X6F422E74
+Current editor: WED, WED, RPW, GED, STED, STED, MED, RPW
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x6f422e74:
+	0x0f1c97f0: edt_wed + 0x697f0 (?wed_wsf_alloc_string@@YAPAV?$basic_string@DU?$char_traits@D@_Dinkum_std@@V?$MEM_STL_ALLOCATOR@D@@@_Dinkum_std@@PAVwed_wsf_lexer_yyFlexLexer@@PBDH@Z + 0x1cd0)
+	0x0f1f1d6d: edt_wed + 0x91d6d (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0x1178d)
+	0x045713ba: db_vdb + 0x413ba (?erase_range@VDB_COMPRESSION_GENERATOR@@AAIXABV?$_Vector_iterator@UVDB_COMPRESSION_ENTRY@@V?$MEM_STL_ALLOCATOR@UVDB_COMPRESSION_ENTRY@@@@@_Dinkum_std@@0@Z + 0x8a)
+	0x652ae2dc: mfc90 + 0x2e2dc
+	0x769d4811: GDI32 + 0x4811 (SetBkMode + 0x21)
+	0x652d9e0c: mfc90 + 0x59e0c
+	0x04cd3df4: GCL_GTO + 0x3df4 (??1GTO_LINE@@UAE@XZ + 0x54)
+	0x0f1788c7: edt_wed + 0x188c7 (edt_wed_dll_get_template_classes + 0x1de7)
+	0x0dfdd743:
+	0x00cb5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	0x76507963: gdi32full + 0xa7963 (LPtoDP + 0x63)
+	0x0f2065cb: edt_wed + 0xa65cb (?wed_wsf_parser_yyparse@@YAHPAVFlexLexer@@PAX@Z + 0x25feb)
+	0x04c34b77: GCL_CGL + 0x4b77 (?draw@CGL_PLANE@@QAIXPAVCDC@@PAVCWnd@@@Z + 0xa7)
+	0x04c34b9b: GCL_CGL + 0x4b9b (?draw@CGL_PLANE@@QAIXPAVCDC@@PAVCWnd@@@Z + 0xcb)
+	0x0f197c7c: edt_wed + 0x37c7c (edt_wed_dll_get_template_classes + 0x2119c)
+	</callstack>
+	<error>Current editor: WED, WED</error>
+	<date>Wed Dec 11 11:02:06 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X6F422E74
+Current editor: WED, WED
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity General_REG is
+PORT (
+	WE, Clk: in STD_LOGIC;
+	RA, WA: in STD_LOGIC_VECTOR(1 downto 0); -- Control Signal
+	din: in STD_LOGIC_VECTOR(7 downto 0);
+	
+	oA, oB: out STD_LOGIC_VECTOR(7 downto 0);
+	oregA, oregB, oregC: out STD_LOGIC_VECTOR(7 downto 0)
+	);
+end General_REG;
+
+architecture behav of General_REG is
+signal regA: std_logic_vector(7 downto 0):="00110011";
+signal regB: std_logic_vector(7 downto 0):="11111111";
+signal regC: std_logic_vector(7 downto 0):="00000011";
+signal tRA, tWA: std_logic_vector(2 downto 0);
+signal halt: std_logic_vector(7 downto 0):="ZZZZZZZZ";
+begin 
+	RWREG: Process(din, clk, WE, RA, WA)
+	begin
+		if WE='1' then
+			if(RA="00") then
+				oA <= regA;
+			elsif(RA="01") then
+				oA <= regB;
+			else
+				oA <= regC;
+			end if;
+			
+			if(WA="00") then
+				oB <= regA;
+			elsif WA="01" then
+				oB <= regB;
+			else
+				oB <= regC;
+			end if;
+		else
+			if falling_edge(clk) then -- Write to register
+				case WA is
+					when "00" => regA <= din;
+					when "01" => regB <= din;
+					when "10" => regC <= din;
+					when others=>null; 
+				end case;
+			end if;
+		end if;
+	end process;
+	oregA <= regA;	oregB <= regB; 	oregC <= regC;
+end behav;

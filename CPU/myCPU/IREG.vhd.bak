@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity IReg is
+PORT(
+	LD_IR: in STD_LOGIC;
+	clk, EN: in STD_LOGIC;
+	din: in STD_LOGIC_VECTOR(7 downto 0);
+	dout: out STD_LOGIC_VECTOR(7 downto 0)
+);
+end IReg;
+
+architecture behav of IReg is
+signal tmp: STD_LOGIC_VECTOR(7 downto 0);
+begin
+	process(clk, EN, LD_IR, din)	
+	begin
+		if falling_edge(clk) then
+			if EN='1' and LD_IR='1' then 
+				tmp <= din;
+			else tmp <= tmp;
+			end if;
+		end if;
+	end process;
+	dout <= tmp;
+end behav;

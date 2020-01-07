@@ -1,0 +1,569 @@
+Simulator report for myCPU
+Sat Dec 21 11:34:59 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 us       ;
+; Simulation Netlist Size     ; 219 nodes    ;
+; Simulation Coverage         ;      76.78 % ;
+; Total Number of Transitions ; 42319        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
+; Device                      ; EP1C3T100C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; myCPU.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++----------------------------------------------------------------------------------------------------------------+
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ALTSYNCRAM ;
++----------------------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      76.78 % ;
+; Total nodes checked                                 ; 219          ;
+; Total output ports checked                          ; 267          ;
+; Total output ports with complete 1/0-value coverage ; 205          ;
+; Total output ports with no 1/0-value coverage       ; 46           ;
+; Total output ports with no 1-value coverage         ; 59           ;
+; Total output ports with no 0-value coverage         ; 49           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                      ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                        ; Output Port Name                                                                                           ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[6] ; portadataout0    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[7] ; portadataout1    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[2] ; portadataout2    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[3] ; portadataout3    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[5] ; portadataout4    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[4] ; portadataout5    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[0] ; portadataout6    ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|ram_block1a6 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_id91:auto_generated|q_a[1] ; portadataout7    ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[5]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[5]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[5]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[5]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[5]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[5]~COUTCOUT1_18           ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[6]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[6]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[6]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[6]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[6]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[6]~COUTCOUT1_20           ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[0]                                                                             ; |myCPU|ProgramCounter:inst|Finder[0]~2                                                                     ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[0]                                                                             ; |myCPU|ProgramCounter:inst|Finder[0]~2COUT1_27                                                             ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[1]                                                                             ; |myCPU|ProgramCounter:inst|Finder[1]~4                                                                     ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[1]                                                                             ; |myCPU|ProgramCounter:inst|Finder[1]~4COUT1_29                                                             ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[2]                                                                             ; |myCPU|ProgramCounter:inst|Finder[2]~6                                                                     ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[2]                                                                             ; |myCPU|ProgramCounter:inst|Finder[2]~6COUT1_31                                                             ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[7]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[7]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[7]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[7]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[7]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[7]~COUTCOUT1_22           ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[0]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[0]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[0]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[0]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[0]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[0]~COUTCOUT1_10           ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[2]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[2]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[2]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[2]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[2]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[2]~COUTCOUT1_14           ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[1]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[1]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[1]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[1]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[1]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[1]~COUTCOUT1_12           ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[3]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[3]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[3]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[3]~COUT                   ; cout0            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[3]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[3]~COUTCOUT1_16           ; cout1            ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[4]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[4]                        ; combout          ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[4]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[4]~COUT                   ; cout             ;
+; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[8]                              ; |myCPU|ALU:inst9|lpm_add_sub:Add0|alt_stratix_add_sub:stratix_adder|add_sub_cell[8]                        ; combout          ;
+; |myCPU|General_REG:inst8|regB[7]                                                                                 ; |myCPU|General_REG:inst8|oB~16                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[7]                                                                                 ; |myCPU|General_REG:inst8|regB[7]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|oB~17                                                                                   ; |myCPU|General_REG:inst8|oB~17                                                                             ; combout          ;
+; |myCPU|IDecoder:inst15|MOVA~8                                                                                    ; |myCPU|IDecoder:inst15|MOVA~8                                                                              ; combout          ;
+; |myCPU|IDecoder:inst15|RSR~6                                                                                     ; |myCPU|IDecoder:inst15|RSR~6                                                                               ; combout          ;
+; |myCPU|IDecoder:inst15|RSR~7                                                                                     ; |myCPU|IDecoder:inst15|RSR~7                                                                               ; combout          ;
+; |myCPU|IDecoder:inst15|RSR~8                                                                                     ; |myCPU|IDecoder:inst15|RSR~8                                                                               ; combout          ;
+; |myCPU|IDecoder:inst15|IN0~3                                                                                     ; |myCPU|IDecoder:inst15|IN0~3                                                                               ; combout          ;
+; |myCPU|IDecoder:inst15|RSL                                                                                       ; |myCPU|IDecoder:inst15|RSL                                                                                 ; combout          ;
+; |myCPU|ALU:inst9|Result[0]~61                                                                                    ; |myCPU|ALU:inst9|Result[0]~61                                                                              ; combout          ;
+; |myCPU|CLogic:inst16|WE~8                                                                                        ; |myCPU|CLogic:inst16|WE~8                                                                                  ; combout          ;
+; |myCPU|CLogic:inst16|WE~9                                                                                        ; |myCPU|CLogic:inst16|WE~9                                                                                  ; combout          ;
+; |myCPU|CLogic:inst16|WE~6                                                                                        ; |myCPU|CLogic:inst16|WE~6                                                                                  ; combout          ;
+; |myCPU|General_REG:inst8|regA[7]~2                                                                               ; |myCPU|General_REG:inst8|regA[7]~2                                                                         ; combout          ;
+; |myCPU|IDecoder:inst15|OUT0~4                                                                                    ; |myCPU|IDecoder:inst15|OUT0~4                                                                              ; combout          ;
+; |myCPU|IDecoder:inst15|OUT0~5                                                                                    ; |myCPU|IDecoder:inst15|OUT0~5                                                                              ; combout          ;
+; |myCPU|Creg:inst4|Equal0~0                                                                                       ; |myCPU|Creg:inst4|Equal0~0                                                                                 ; combout          ;
+; |myCPU|CLogic:inst16|M~2                                                                                         ; |myCPU|CLogic:inst16|M~2                                                                                   ; combout          ;
+; |myCPU|ALU:inst9|Result[0]~62                                                                                    ; |myCPU|ALU:inst9|Result[0]~62                                                                              ; combout          ;
+; |myCPU|CLogic:inst16|M~3                                                                                         ; |myCPU|CLogic:inst16|M~3                                                                                   ; combout          ;
+; |myCPU|ALU:inst9|Result[0]~63                                                                                    ; |myCPU|ALU:inst9|Result[0]~63                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[5]~64                                                                                    ; |myCPU|ALU:inst9|Result[5]~64                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[5]~65                                                                                    ; |myCPU|ALU:inst9|Result[5]~65                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[5]~66                                                                                    ; |myCPU|ALU:inst9|Result[5]~66                                                                              ; combout          ;
+; |myCPU|CLogic:inst16|F_BUS~6                                                                                     ; |myCPU|CLogic:inst16|F_BUS~6                                                                               ; combout          ;
+; |myCPU|Bus[5]~0                                                                                                  ; |myCPU|Bus[5]~0                                                                                            ; combout          ;
+; |myCPU|ALU:inst9|Result[6]~67                                                                                    ; |myCPU|ALU:inst9|Result[6]~67                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[6]~68                                                                                    ; |myCPU|ALU:inst9|Result[6]~68                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[6]~69                                                                                    ; |myCPU|ALU:inst9|Result[6]~69                                                                              ; combout          ;
+; |myCPU|Bus[5]~1                                                                                                  ; |myCPU|Bus[5]~1                                                                                            ; combout          ;
+; |myCPU|Bus[6]~2                                                                                                  ; |myCPU|Bus[6]~2                                                                                            ; combout          ;
+; |myCPU|ALU:inst9|Result[7]~70                                                                                    ; |myCPU|ALU:inst9|Result[7]~70                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[7]~71                                                                                    ; |myCPU|ALU:inst9|Result[7]~71                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[7]~72                                                                                    ; |myCPU|ALU:inst9|Result[7]~72                                                                              ; combout          ;
+; |myCPU|Bus[6]~3                                                                                                  ; |myCPU|Bus[6]~3                                                                                            ; combout          ;
+; |myCPU|IReg:inst7|tmp[6]                                                                                         ; |myCPU|Bus[6]~4                                                                                            ; combout          ;
+; |myCPU|IReg:inst7|tmp[6]                                                                                         ; |myCPU|IReg:inst7|tmp[6]                                                                                   ; regout           ;
+; |myCPU|Bus[7]~5                                                                                                  ; |myCPU|Bus[7]~5                                                                                            ; combout          ;
+; |myCPU|ALU:inst9|Result[0]~73                                                                                    ; |myCPU|ALU:inst9|Result[0]~73                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[0]~74                                                                                    ; |myCPU|ALU:inst9|Result[0]~74                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[0]~75                                                                                    ; |myCPU|ALU:inst9|Result[0]~75                                                                              ; combout          ;
+; |myCPU|Bus[7]~6                                                                                                  ; |myCPU|Bus[7]~6                                                                                            ; combout          ;
+; |myCPU|IReg:inst7|tmp[7]                                                                                         ; |myCPU|Bus[7]~7                                                                                            ; combout          ;
+; |myCPU|IReg:inst7|tmp[7]                                                                                         ; |myCPU|IReg:inst7|tmp[7]                                                                                   ; regout           ;
+; |myCPU|ALU:inst9|Result[2]~76                                                                                    ; |myCPU|ALU:inst9|Result[2]~76                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[2]~77                                                                                    ; |myCPU|ALU:inst9|Result[2]~77                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[2]~78                                                                                    ; |myCPU|ALU:inst9|Result[2]~78                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[1]~79                                                                                    ; |myCPU|ALU:inst9|Result[1]~79                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[1]~80                                                                                    ; |myCPU|ALU:inst9|Result[1]~80                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[1]~81                                                                                    ; |myCPU|ALU:inst9|Result[1]~81                                                                              ; combout          ;
+; |myCPU|Bus[2]~8                                                                                                  ; |myCPU|Bus[2]~8                                                                                            ; combout          ;
+; |myCPU|ALU:inst9|Result[3]~82                                                                                    ; |myCPU|ALU:inst9|Result[3]~82                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[3]~84                                                                                    ; |myCPU|ALU:inst9|Result[3]~84                                                                              ; combout          ;
+; |myCPU|Bus[2]~9                                                                                                  ; |myCPU|Bus[2]~9                                                                                            ; combout          ;
+; |myCPU|IReg:inst7|tmp[2]                                                                                         ; |myCPU|Bus[2]~10                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[2]                                                                                         ; |myCPU|IReg:inst7|tmp[2]                                                                                   ; regout           ;
+; |myCPU|Bus[3]~11                                                                                                 ; |myCPU|Bus[3]~11                                                                                           ; combout          ;
+; |myCPU|ALU:inst9|Result[4]~85                                                                                    ; |myCPU|ALU:inst9|Result[4]~85                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[4]~86                                                                                    ; |myCPU|ALU:inst9|Result[4]~86                                                                              ; combout          ;
+; |myCPU|ALU:inst9|Result[4]~87                                                                                    ; |myCPU|ALU:inst9|Result[4]~87                                                                              ; combout          ;
+; |myCPU|Bus[3]~12                                                                                                 ; |myCPU|Bus[3]~12                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[3]                                                                                         ; |myCPU|Bus[3]~13                                                                                           ; combout          ;
+; |myCPU|Bus[5]~14                                                                                                 ; |myCPU|Bus[5]~14                                                                                           ; combout          ;
+; |myCPU|Bus[5]~15                                                                                                 ; |myCPU|Bus[5]~15                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[5]                                                                                         ; |myCPU|Bus[5]~16                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[5]                                                                                         ; |myCPU|IReg:inst7|tmp[5]                                                                                   ; regout           ;
+; |myCPU|Bus[4]~17                                                                                                 ; |myCPU|Bus[4]~17                                                                                           ; combout          ;
+; |myCPU|Bus[4]~18                                                                                                 ; |myCPU|Bus[4]~18                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[4]                                                                                         ; |myCPU|Bus[4]~19                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[4]                                                                                         ; |myCPU|IReg:inst7|tmp[4]                                                                                   ; regout           ;
+; |myCPU|General_REG:inst8|regB[6]                                                                                 ; |myCPU|General_REG:inst8|oB~18                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[6]                                                                                 ; |myCPU|General_REG:inst8|regB[6]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regC[6]                                                                                 ; |myCPU|General_REG:inst8|oB~19                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[5]                                                                                 ; |myCPU|General_REG:inst8|regA[5]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regB[5]                                                                                 ; |myCPU|General_REG:inst8|oB~20                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[5]                                                                                 ; |myCPU|General_REG:inst8|regB[5]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regC[5]                                                                                 ; |myCPU|General_REG:inst8|oB~21                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[4]                                                                                 ; |myCPU|General_REG:inst8|regA[4]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regB[4]                                                                                 ; |myCPU|General_REG:inst8|oB~22                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[4]                                                                                 ; |myCPU|General_REG:inst8|regB[4]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regC[4]                                                                                 ; |myCPU|General_REG:inst8|oB~23                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[3]                                                                                 ; |myCPU|General_REG:inst8|oB~24                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[3]                                                                                 ; |myCPU|General_REG:inst8|regB[3]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regC[3]                                                                                 ; |myCPU|General_REG:inst8|oB~25                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[2]                                                                                 ; |myCPU|General_REG:inst8|regB[2]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regA[2]                                                                                 ; |myCPU|General_REG:inst8|oB~26                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[2]                                                                                 ; |myCPU|General_REG:inst8|regA[2]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regC[2]                                                                                 ; |myCPU|General_REG:inst8|oB~27                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[1]                                                                                 ; |myCPU|General_REG:inst8|regA[1]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regB[1]                                                                                 ; |myCPU|General_REG:inst8|oB~28                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[1]                                                                                 ; |myCPU|General_REG:inst8|regB[1]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|oB~29                                                                                   ; |myCPU|General_REG:inst8|oB~29                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[0]                                                                                 ; |myCPU|General_REG:inst8|regA[0]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regB[0]                                                                                 ; |myCPU|General_REG:inst8|regB[0]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|oB~30                                                                                   ; |myCPU|General_REG:inst8|oB~30                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB~31                                                                                   ; |myCPU|General_REG:inst8|oB~31                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regB[7]~0                                                                               ; |myCPU|General_REG:inst8|regB[7]~0                                                                         ; combout          ;
+; |myCPU|Bus[0]~20                                                                                                 ; |myCPU|Bus[0]~20                                                                                           ; combout          ;
+; |myCPU|Bus[0]~21                                                                                                 ; |myCPU|Bus[0]~21                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[0]                                                                                         ; |myCPU|Bus[0]~22                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[0]                                                                                         ; |myCPU|IReg:inst7|tmp[0]                                                                                   ; regout           ;
+; |myCPU|Bus[1]~23                                                                                                 ; |myCPU|Bus[1]~23                                                                                           ; combout          ;
+; |myCPU|Bus[1]~24                                                                                                 ; |myCPU|Bus[1]~24                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[1]                                                                                         ; |myCPU|Bus[1]~25                                                                                           ; combout          ;
+; |myCPU|IReg:inst7|tmp[1]                                                                                         ; |myCPU|IReg:inst7|tmp[1]                                                                                   ; regout           ;
+; |myCPU|General_REG:inst8|oA~16                                                                                   ; |myCPU|General_REG:inst8|oA~16                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~17                                                                                   ; |myCPU|General_REG:inst8|oA~17                                                                             ; combout          ;
+; |myCPU|ALU:inst9|tmp[1]~3                                                                                        ; |myCPU|ALU:inst9|tmp[1]~3                                                                                  ; combout          ;
+; |myCPU|General_REG:inst8|regA[6]                                                                                 ; |myCPU|General_REG:inst8|oA~18                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[6]                                                                                 ; |myCPU|General_REG:inst8|regA[6]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|oA~19                                                                                   ; |myCPU|General_REG:inst8|oA~19                                                                             ; combout          ;
+; |myCPU|IDecoder:inst15|MOVC~4                                                                                    ; |myCPU|IDecoder:inst15|MOVC~4                                                                              ; combout          ;
+; |myCPU|ProgramCounter:inst|Finder[4]~0                                                                           ; |myCPU|ProgramCounter:inst|Finder[4]~0                                                                     ; combout          ;
+; |myCPU|IDecoder:inst15|JMP~7                                                                                     ; |myCPU|IDecoder:inst15|JMP~7                                                                               ; combout          ;
+; |myCPU|CLogic:inst16|LD_PC~6                                                                                     ; |myCPU|CLogic:inst16|LD_PC~6                                                                               ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux7~0                                                                                     ; |myCPU|mux8_3_1:inst1|Mux7~0                                                                               ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux7~1                                                                                     ; |myCPU|mux8_3_1:inst1|Mux7~1                                                                               ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux6~0                                                                                     ; |myCPU|mux8_3_1:inst1|Mux6~0                                                                               ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux6~1                                                                                     ; |myCPU|mux8_3_1:inst1|Mux6~1                                                                               ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux5~0                                                                                     ; |myCPU|mux8_3_1:inst1|Mux5~0                                                                               ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux5~1                                                                                     ; |myCPU|mux8_3_1:inst1|Mux5~1                                                                               ; combout          ;
+; |myCPU|General_REG:inst8|regA[7]                                                                                 ; |myCPU|General_REG:inst8|oA~20                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[7]                                                                                 ; |myCPU|General_REG:inst8|regA[7]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|regC[7]                                                                                 ; |myCPU|General_REG:inst8|oA~21                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~22                                                                                   ; |myCPU|General_REG:inst8|oA~22                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~23                                                                                   ; |myCPU|General_REG:inst8|oA~23                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~24                                                                                   ; |myCPU|General_REG:inst8|oA~24                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~25                                                                                   ; |myCPU|General_REG:inst8|oA~25                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~26                                                                                   ; |myCPU|General_REG:inst8|oA~26                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~27                                                                                   ; |myCPU|General_REG:inst8|oA~27                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[3]                                                                                 ; |myCPU|General_REG:inst8|oA~28                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|regA[3]                                                                                 ; |myCPU|General_REG:inst8|regA[3]                                                                           ; regout           ;
+; |myCPU|General_REG:inst8|oA~29                                                                                   ; |myCPU|General_REG:inst8|oA~29                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~30                                                                                   ; |myCPU|General_REG:inst8|oA~30                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA~31                                                                                   ; |myCPU|General_REG:inst8|oA~31                                                                             ; combout          ;
+; |myCPU|Zreg:inst6|reg~1                                                                                          ; |myCPU|Zreg:inst6|reg~1                                                                                    ; combout          ;
+; |myCPU|Zreg:inst6|reg~2                                                                                          ; |myCPU|Zreg:inst6|reg~2                                                                                    ; combout          ;
+; |myCPU|Zreg:inst6|flag                                                                                           ; |myCPU|Zreg:inst6|process_0~1                                                                              ; combout          ;
+; |myCPU|Creg:inst4|flag                                                                                           ; |myCPU|Creg:inst4|process_0~4                                                                              ; combout          ;
+; |myCPU|Creg:inst4|reg~0                                                                                          ; |myCPU|Creg:inst4|reg~0                                                                                    ; combout          ;
+; |myCPU|Creg:inst4|reg~1                                                                                          ; |myCPU|Creg:inst4|reg~1                                                                                    ; combout          ;
+; |myCPU|CLogic:inst16|LD_PC~7                                                                                     ; |myCPU|CLogic:inst16|LD_PC~7                                                                               ; combout          ;
+; |myCPU|CLogic:inst16|LD_PC~8                                                                                     ; |myCPU|CLogic:inst16|LD_PC~8                                                                               ; combout          ;
+; |myCPU|ProgramCounter:inst|Finder[4]~17                                                                          ; |myCPU|ProgramCounter:inst|Finder[4]~17                                                                    ; combout          ;
+; |myCPU|ProgramCounter:inst|Finder[4]~18                                                                          ; |myCPU|ProgramCounter:inst|Finder[4]~18                                                                    ; combout          ;
+; |myCPU|General_REG:inst8|regA[7]~3                                                                               ; |myCPU|General_REG:inst8|regA[7]~3                                                                         ; combout          ;
+; |myCPU|General_REG:inst8|oB[7]                                                                                   ; |myCPU|General_REG:inst8|oB[7]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[6]                                                                                   ; |myCPU|General_REG:inst8|oB[6]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[5]                                                                                   ; |myCPU|General_REG:inst8|oB[5]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[4]                                                                                   ; |myCPU|General_REG:inst8|oB[4]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[3]                                                                                   ; |myCPU|General_REG:inst8|oB[3]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[2]                                                                                   ; |myCPU|General_REG:inst8|oB[2]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[1]                                                                                   ; |myCPU|General_REG:inst8|oB[1]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oB[0]                                                                                   ; |myCPU|General_REG:inst8|oB[0]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA[5]                                                                                   ; |myCPU|General_REG:inst8|oA[5]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA[6]                                                                                   ; |myCPU|General_REG:inst8|oA[6]                                                                             ; combout          ;
+; |myCPU|ALU:inst9|tmp[6]                                                                                          ; |myCPU|ALU:inst9|tmp[6]                                                                                    ; combout          ;
+; |myCPU|General_REG:inst8|oA[7]                                                                                   ; |myCPU|General_REG:inst8|oA[7]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA[0]                                                                                   ; |myCPU|General_REG:inst8|oA[0]                                                                             ; combout          ;
+; |myCPU|ALU:inst9|tmp[0]                                                                                          ; |myCPU|ALU:inst9|tmp[0]                                                                                    ; combout          ;
+; |myCPU|General_REG:inst8|oA[2]                                                                                   ; |myCPU|General_REG:inst8|oA[2]                                                                             ; combout          ;
+; |myCPU|ALU:inst9|tmp[2]                                                                                          ; |myCPU|ALU:inst9|tmp[2]                                                                                    ; combout          ;
+; |myCPU|General_REG:inst8|oA[1]                                                                                   ; |myCPU|General_REG:inst8|oA[1]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA[3]                                                                                   ; |myCPU|General_REG:inst8|oA[3]                                                                             ; combout          ;
+; |myCPU|General_REG:inst8|oA[4]                                                                                   ; |myCPU|General_REG:inst8|oA[4]                                                                             ; combout          ;
+; |myCPU|ALU:inst9|tmp[8]                                                                                          ; |myCPU|ALU:inst9|tmp[8]                                                                                    ; combout          ;
+; |myCPU|clk                                                                                                       ; |myCPU|clk~corein                                                                                          ; combout          ;
++------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                     ;
++-----------------------------------------+-------------------------------------------------+------------------+
+; Node Name                               ; Output Port Name                                ; Output Port Type ;
++-----------------------------------------+-------------------------------------------------+------------------+
+; |myCPU|ProgramCounter:inst|Finder[3]    ; |myCPU|ProgramCounter:inst|Finder[3]~8          ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[3]    ; |myCPU|ProgramCounter:inst|Finder[3]~8COUT1_33  ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[4]    ; |myCPU|ProgramCounter:inst|Finder[4]~10         ; cout             ;
+; |myCPU|ProgramCounter:inst|Finder[5]    ; |myCPU|ProgramCounter:inst|Finder[5]~12         ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[5]    ; |myCPU|ProgramCounter:inst|Finder[5]~12COUT1_35 ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[6]    ; |myCPU|ProgramCounter:inst|Finder[6]~14         ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[6]    ; |myCPU|ProgramCounter:inst|Finder[6]~14COUT1_37 ; cout1            ;
+; |myCPU|General_REG:inst8|Equal2~0       ; |myCPU|General_REG:inst8|Equal2~0               ; combout          ;
+; |myCPU|IDecoder:inst15|OUT0~2           ; |myCPU|IDecoder:inst15|OUT0~2                   ; combout          ;
+; |myCPU|IDecoder:inst15|OUT0~3           ; |myCPU|IDecoder:inst15|OUT0~3                   ; combout          ;
+; |myCPU|ALU:inst9|Equal3~0               ; |myCPU|ALU:inst9|Equal3~0                       ; combout          ;
+; |myCPU|CLogic:inst16|WE~7               ; |myCPU|CLogic:inst16|WE~7                       ; combout          ;
+; |myCPU|IDecoder:inst15|MOVA~9           ; |myCPU|IDecoder:inst15|MOVA~9                   ; combout          ;
+; |myCPU|Creg:inst4|Equal1~0              ; |myCPU|Creg:inst4|Equal1~0                      ; combout          ;
+; |myCPU|CLogic:inst16|F_BUS~5            ; |myCPU|CLogic:inst16|F_BUS~5                    ; combout          ;
+; |myCPU|ALU:inst9|Result[3]~83           ; |myCPU|ALU:inst9|Result[3]~83                   ; combout          ;
+; |myCPU|IReg:inst7|tmp[3]                ; |myCPU|IReg:inst7|tmp[3]                        ; regout           ;
+; |myCPU|General_REG:inst8|regC[6]        ; |myCPU|General_REG:inst8|regC[6]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[5]        ; |myCPU|General_REG:inst8|regC[5]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[4]        ; |myCPU|General_REG:inst8|regC[4]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[3]        ; |myCPU|General_REG:inst8|regC[3]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[2]        ; |myCPU|General_REG:inst8|regC[2]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[1]        ; |myCPU|General_REG:inst8|regC[1]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[0]        ; |myCPU|General_REG:inst8|regC[0]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[7]~0      ; |myCPU|General_REG:inst8|regC[7]~0              ; combout          ;
+; |myCPU|CLogic:inst16|LD_PC~5            ; |myCPU|CLogic:inst16|LD_PC~5                    ; combout          ;
+; |myCPU|IDecoder:inst15|MOVB~3           ; |myCPU|IDecoder:inst15|MOVB~3                   ; combout          ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|_~3 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|_~3         ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux4~0            ; |myCPU|mux8_3_1:inst1|Mux4~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux4~1            ; |myCPU|mux8_3_1:inst1|Mux4~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux2~0            ; |myCPU|mux8_3_1:inst1|Mux2~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux2~1            ; |myCPU|mux8_3_1:inst1|Mux2~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux1~0            ; |myCPU|mux8_3_1:inst1|Mux1~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux1~1            ; |myCPU|mux8_3_1:inst1|Mux1~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux0~0            ; |myCPU|mux8_3_1:inst1|Mux0~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux0~1            ; |myCPU|mux8_3_1:inst1|Mux0~1                    ; combout          ;
+; |myCPU|General_REG:inst8|regC[7]        ; |myCPU|General_REG:inst8|regC[7]                ; regout           ;
+; |myCPU|IDecoder:inst15|MOVC             ; |myCPU|IDecoder:inst15|MOVC                     ; combout          ;
+; |myCPU|ALU:inst9|tmp[5]                 ; |myCPU|ALU:inst9|tmp[5]                         ; combout          ;
+; |myCPU|ALU:inst9|tmp[7]                 ; |myCPU|ALU:inst9|tmp[7]                         ; combout          ;
+; |myCPU|ALU:inst9|tmp[1]                 ; |myCPU|ALU:inst9|tmp[1]                         ; combout          ;
+; |myCPU|ALU:inst9|tmp[3]                 ; |myCPU|ALU:inst9|tmp[3]                         ; combout          ;
+; |myCPU|ALU:inst9|tmp[4]                 ; |myCPU|ALU:inst9|tmp[4]                         ; combout          ;
+; |myCPU|LED[7]                           ; |myCPU|LED[7]                                   ; padio            ;
+; |myCPU|LED[6]                           ; |myCPU|LED[6]                                   ; padio            ;
+; |myCPU|LED[5]                           ; |myCPU|LED[5]                                   ; padio            ;
+; |myCPU|LED[4]                           ; |myCPU|LED[4]                                   ; padio            ;
+; |myCPU|LED[3]                           ; |myCPU|LED[3]                                   ; padio            ;
+; |myCPU|LED[2]                           ; |myCPU|LED[2]                                   ; padio            ;
+; |myCPU|LED[1]                           ; |myCPU|LED[1]                                   ; padio            ;
+; |myCPU|LED[0]                           ; |myCPU|LED[0]                                   ; padio            ;
+; |myCPU|IN_Addr[6]                       ; |myCPU|IN_Addr[6]~corein                        ; combout          ;
+; |myCPU|IN_Addr[7]                       ; |myCPU|IN_Addr[7]~corein                        ; combout          ;
+; |myCPU|IN_Addr[2]                       ; |myCPU|IN_Addr[2]~corein                        ; combout          ;
+; |myCPU|IN_Addr[3]                       ; |myCPU|IN_Addr[3]~corein                        ; combout          ;
+; |myCPU|IN_Addr[5]                       ; |myCPU|IN_Addr[5]~corein                        ; combout          ;
+; |myCPU|IN_Addr[4]                       ; |myCPU|IN_Addr[4]~corein                        ; combout          ;
+; |myCPU|IN_Addr[0]                       ; |myCPU|IN_Addr[0]~corein                        ; combout          ;
+; |myCPU|IN_Addr[1]                       ; |myCPU|IN_Addr[1]~corein                        ; combout          ;
++-----------------------------------------+-------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                     ;
++-----------------------------------------+-------------------------------------------------+------------------+
+; Node Name                               ; Output Port Name                                ; Output Port Type ;
++-----------------------------------------+-------------------------------------------------+------------------+
+; |myCPU|ProgramCounter:inst|Finder[3]    ; |myCPU|ProgramCounter:inst|Finder[3]~8          ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[3]    ; |myCPU|ProgramCounter:inst|Finder[3]~8COUT1_33  ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[4]    ; |myCPU|ProgramCounter:inst|Finder[4]~10         ; cout             ;
+; |myCPU|ProgramCounter:inst|Finder[5]    ; |myCPU|ProgramCounter:inst|Finder[5]~12         ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[5]    ; |myCPU|ProgramCounter:inst|Finder[5]~12COUT1_35 ; cout1            ;
+; |myCPU|ProgramCounter:inst|Finder[6]    ; |myCPU|ProgramCounter:inst|Finder[6]~14         ; cout0            ;
+; |myCPU|ProgramCounter:inst|Finder[6]    ; |myCPU|ProgramCounter:inst|Finder[6]~14COUT1_37 ; cout1            ;
+; |myCPU|General_REG:inst8|Equal2~0       ; |myCPU|General_REG:inst8|Equal2~0               ; combout          ;
+; |myCPU|IDecoder:inst15|OUT0~2           ; |myCPU|IDecoder:inst15|OUT0~2                   ; combout          ;
+; |myCPU|IDecoder:inst15|OUT0~3           ; |myCPU|IDecoder:inst15|OUT0~3                   ; combout          ;
+; |myCPU|ALU:inst9|Equal3~0               ; |myCPU|ALU:inst9|Equal3~0                       ; combout          ;
+; |myCPU|CLogic:inst16|WE~7               ; |myCPU|CLogic:inst16|WE~7                       ; combout          ;
+; |myCPU|IDecoder:inst15|MOVA~9           ; |myCPU|IDecoder:inst15|MOVA~9                   ; combout          ;
+; |myCPU|Creg:inst4|Equal1~0              ; |myCPU|Creg:inst4|Equal1~0                      ; combout          ;
+; |myCPU|CLogic:inst16|F_BUS~5            ; |myCPU|CLogic:inst16|F_BUS~5                    ; combout          ;
+; |myCPU|ALU:inst9|Result[3]~83           ; |myCPU|ALU:inst9|Result[3]~83                   ; combout          ;
+; |myCPU|IReg:inst7|tmp[3]                ; |myCPU|IReg:inst7|tmp[3]                        ; regout           ;
+; |myCPU|General_REG:inst8|regC[6]        ; |myCPU|General_REG:inst8|regC[6]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[5]        ; |myCPU|General_REG:inst8|regC[5]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[4]        ; |myCPU|General_REG:inst8|regC[4]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[3]        ; |myCPU|General_REG:inst8|regC[3]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[2]        ; |myCPU|General_REG:inst8|regC[2]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[1]        ; |myCPU|General_REG:inst8|regC[1]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[0]        ; |myCPU|General_REG:inst8|regC[0]                ; regout           ;
+; |myCPU|General_REG:inst8|regC[7]~0      ; |myCPU|General_REG:inst8|regC[7]~0              ; combout          ;
+; |myCPU|CLogic:inst16|LD_PC~5            ; |myCPU|CLogic:inst16|LD_PC~5                    ; combout          ;
+; |myCPU|IDecoder:inst15|MOVB~3           ; |myCPU|IDecoder:inst15|MOVB~3                   ; combout          ;
+; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|_~3 ; |myCPU|RAM_IO:inst2|lpm_ram_io:inst|_~3         ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux4~0            ; |myCPU|mux8_3_1:inst1|Mux4~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux4~1            ; |myCPU|mux8_3_1:inst1|Mux4~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux3~0            ; |myCPU|mux8_3_1:inst1|Mux3~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux3~1            ; |myCPU|mux8_3_1:inst1|Mux3~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux2~0            ; |myCPU|mux8_3_1:inst1|Mux2~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux2~1            ; |myCPU|mux8_3_1:inst1|Mux2~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux1~0            ; |myCPU|mux8_3_1:inst1|Mux1~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux1~1            ; |myCPU|mux8_3_1:inst1|Mux1~1                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux0~0            ; |myCPU|mux8_3_1:inst1|Mux0~0                    ; combout          ;
+; |myCPU|mux8_3_1:inst1|Mux0~1            ; |myCPU|mux8_3_1:inst1|Mux0~1                    ; combout          ;
+; |myCPU|General_REG:inst8|regC[7]        ; |myCPU|General_REG:inst8|regC[7]                ; regout           ;
+; |myCPU|Zreg:inst6|reg~0                 ; |myCPU|Zreg:inst6|reg~0                         ; combout          ;
+; |myCPU|IDecoder:inst15|MOVC             ; |myCPU|IDecoder:inst15|MOVC                     ; combout          ;
+; |myCPU|LED[7]                           ; |myCPU|LED[7]                                   ; padio            ;
+; |myCPU|LED[6]                           ; |myCPU|LED[6]                                   ; padio            ;
+; |myCPU|LED[5]                           ; |myCPU|LED[5]                                   ; padio            ;
+; |myCPU|LED[4]                           ; |myCPU|LED[4]                                   ; padio            ;
+; |myCPU|LED[3]                           ; |myCPU|LED[3]                                   ; padio            ;
+; |myCPU|LED[2]                           ; |myCPU|LED[2]                                   ; padio            ;
+; |myCPU|LED[1]                           ; |myCPU|LED[1]                                   ; padio            ;
+; |myCPU|LED[0]                           ; |myCPU|LED[0]                                   ; padio            ;
++-----------------------------------------+-------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Dec 21 11:34:58 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off myCPU -c myCPU
+Info: Using vector source file "D:/quartas_workspace/CPU/myCPU/myCPU.vwf"
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IREG_o[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oA[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oB[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregA[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregB[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "oregC[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "ALU_o[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "FB" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "FL" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "FR" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "IN_PC" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "LD_PC" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "mux_o[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[6]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[5]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[4]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "RAM_o[0]" in design.
+Info: Inverted registers were found during simulation
+    Info: Register: |myCPU|General_REG:inst8|regA[5]
+    Info: Register: |myCPU|General_REG:inst8|regA[4]
+    Info: Register: |myCPU|General_REG:inst8|regB[2]
+    Info: Register: |myCPU|General_REG:inst8|regA[1]
+    Info: Register: |myCPU|General_REG:inst8|regC[1]
+    Info: Register: |myCPU|General_REG:inst8|regA[0]
+    Info: Register: |myCPU|General_REG:inst8|regB[0]
+    Info: Register: |myCPU|General_REG:inst8|regC[0]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      76.78 %
+Info: Number of transitions in simulation is 42319
+Info: Quartus II Simulator was successful. 0 errors, 77 warnings
+    Info: Peak virtual memory: 167 megabytes
+    Info: Processing ended: Sat Dec 21 11:34:59 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

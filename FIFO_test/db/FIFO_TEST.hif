@@ -1,0 +1,334 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+..|scan_led3|
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+scan_led3
+# storage
+db|FIFO_TEST.(2).cnf
+db|FIFO_TEST.(2).cnf
+# case_insensitive
+# source_file
+..|scan_led3|scan_led3.bdf
+524752a1fe4e47199063e4be7e8ba2c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+scan_led3:inst3
+}
+# macro_sequence
+
+# end
+# entity
+mux7
+# storage
+db|FIFO_TEST.(3).cnf
+db|FIFO_TEST.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|scan_led3|mux7.vhd
+18b289e8a3b8b7f2bbe76cccec6930
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+scan_led3:inst3|mux7:inst4
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+7449
+# storage
+db|FIFO_TEST.(4).cnf
+db|FIFO_TEST.(4).cnf
+# case_insensitive
+# source_file
+..|..|program files|quartus|libraries|others|maxplus2|7449.bdf
+55dfeea5905bd9dd1223330961b255
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+scan_led3:inst3|7449:inst5
+}
+# macro_sequence
+
+# end
+# entity
+mux4_3_1
+# storage
+db|FIFO_TEST.(5).cnf
+db|FIFO_TEST.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|scan_led3|mux4_3_1.vhd
+2b236e313c51efb9c7d2f1fb25246d3
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+scan_led3:inst3|mux4_3_1:inst2
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+counter4
+# storage
+db|FIFO_TEST.(6).cnf
+db|FIFO_TEST.(6).cnf
+# case_insensitive
+# source_file
+..|scan_led3|counter4.bdf
+9dda168977fd94cc9fb8b20a060424e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+scan_led3:inst3|counter4:inst
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|FIFO_TEST.(7).cnf
+db|FIFO_TEST.(7).cnf
+# case_insensitive
+# source_file
+..|..|program files|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+ENT
+-1
+2
+ENP
+-1
+2
+}
+# include_file {
+..|..|program files|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+scan_led3:inst3|counter4:inst|74161:inst
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|FIFO_TEST.(8).cnf
+db|FIFO_TEST.(8).cnf
+# case_insensitive
+# source_file
+..|..|program files|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+scan_led3:inst3|counter4:inst|74161:inst|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+decoder2-3
+# storage
+db|FIFO_TEST.(9).cnf
+db|FIFO_TEST.(9).cnf
+# case_insensitive
+# source_file
+..|scan_led3|decoder2-3.bdf
+965da56d6838783fa7bc92f5e5de56
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+scan_led3:inst3|decoder2-3:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74139
+# storage
+db|FIFO_TEST.(10).cnf
+db|FIFO_TEST.(10).cnf
+# case_insensitive
+# source_file
+..|..|program files|quartus|libraries|others|maxplus2|74139.bdf
+4ab546d7302e8fe86bee1b6b8b90e8c6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+scan_led3:inst3|decoder2-3:inst1|74139:inst
+}
+# macro_sequence
+
+# end
+# entity
+FIFO_TEST
+# storage
+db|FIFO_TEST.(0).cnf
+db|FIFO_TEST.(0).cnf
+# case_insensitive
+# source_file
+..|FIFO_REG|FIFO_TEST.bdf
+7b8152722b4c7ab6944613194ebc2056
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+FIFO_REG
+# storage
+db|FIFO_TEST.(1).cnf
+db|FIFO_TEST.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|FIFO_REG|FIFO_REG.vhd
+d0a34ef98395c4f51ad954bdbe637ddd
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+wid
+4
+PARAMETER_SIGNED_DEC
+USR
+dep
+4
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+FIFO_REG:inst
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

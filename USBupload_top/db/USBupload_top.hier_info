@@ -1,0 +1,41 @@
+|USBupload_top
+nrd <= rd.DB_MAX_OUTPUT_PORT_TYPE
+clk => USBupload:inst.clock
+nrxf => USBupload:inst.nrxf
+ntxe => USBupload:inst.ntxe
+d[0] <= inst3[0]
+d[1] <= inst3[1]
+d[2] <= inst3[2]
+d[3] <= inst3[3]
+d[4] <= inst3[4]
+d[5] <= inst3[5]
+d[6] <= inst3[6]
+d[7] <= inst3[7]
+nwr <= wr.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|USBupload_top|USBupload:inst
+nrxf => Selector0.IN2
+nrxf => reg_fstate.set_nRD_low.DATAB
+ntxe => Selector1.IN2
+ntxe => reg_fstate.set_WR_high.DATAB
+din[0] => temp[0].DATAIN
+din[1] => temp[1].DATAIN
+din[2] => temp[2].DATAIN
+din[3] => temp[3].DATAIN
+din[4] => temp[4].DATAIN
+din[5] => temp[5].DATAIN
+din[6] => temp[6].DATAIN
+din[7] => temp[7].DATAIN
+nrd <= nrd~0.DB_MAX_OUTPUT_PORT_TYPE
+wr <= process_1~0.DB_MAX_OUTPUT_PORT_TYPE
+dout[0] <= dout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= dout[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= dout[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= dout[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= dout[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

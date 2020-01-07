@@ -1,0 +1,19 @@
+|dc0832
+data[7] => udata[7].DATAIN
+data[6] => udata[6].DATAIN
+data[5] => udata[5].DATAIN
+data[4] => udata[4].DATAIN
+data[3] => udata[3].DATAIN
+data[2] => udata[2].DATAIN
+data[1] => udata[1].DATAIN
+data[0] => udata[0].DATAIN
+udata[7] <= data[7].DB_MAX_OUTPUT_PORT_TYPE
+udata[6] <= data[6].DB_MAX_OUTPUT_PORT_TYPE
+udata[5] <= data[5].DB_MAX_OUTPUT_PORT_TYPE
+udata[4] <= data[4].DB_MAX_OUTPUT_PORT_TYPE
+udata[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+udata[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+udata[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+udata[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

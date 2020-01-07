@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--Created by Liquid XML 2008 (www.liquid-technologies.com) for ALTERA CORPORATION-->
+<ProgramExecution xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+	<AddressBits>32</AddressBits>
+	<DateInvoked>2019/11/14 12:35:48</DateInvoked>
+	<ElapsedTime>1044</ElapsedTime>
+	<IsInternal>false</IsInternal>
+	<Name>quartus</Name>
+	<PeakMemoryUsed>0</PeakMemoryUsed>
+	<QuartusUser>
+		<AlteraUserName/>
+		<FAEContactName/>
+		<UserID>185255126645049.156801067814424</UserID>
+		<UserName>Bankarian</UserName>
+		<TalkbackStatus>
+			<DateSet/>
+			<TalkbackOn>true</TalkbackOn>
+		</TalkbackStatus>
+	</QuartusUser>
+	<Compilation>
+		<CompileID>0</CompileID>
+		<DeviceFamily/>
+		<IncrementalCompilation/>
+		<SOPCBuilderProjectID/>
+		<TopLevelEntityName/>
+	</Compilation>
+	<License>
+		<Edition>Web Edition</Edition>
+		<LicenseHostID/>
+	</License>
+	<SchemaVersion>schema_2008-12-15</SchemaVersion>
+	<ApplicationError>
+		<ErrorMessage>Access Violation at 0X28746867</ErrorMessage>
+		<Line>0</Line>
+		<SourceFile>unknown</SourceFile>
+		<StackTrace>
+	0x28746867:
+	0x10a11d3c: edt_sme + 0x51d3c (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x778c)
+	0x76cde5d0: USER32 + 0x2e5d0 (IsRectEmpty + 0x1a0)
+	0x10a22a5e: edt_sme + 0x62a5e (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x184ae)
+	0x10a185ef: edt_sme + 0x585ef (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0xe03f)
+		</StackTrace>
+		<Subsystem>unknown</Subsystem>
+	</ApplicationError>
+	<QuartusInstallation>
+		<InstallationID>1097499623111.15684602970102</InstallationID>
+		<Version>
+			<Build>184</Build>
+			<BuildSite>SJ</BuildSite>
+			<BuildSuffix/>
+			<Edition>Web Edition</Edition>
+			<ServicePack>1</ServicePack>
+			<VersionNumber>9</VersionNumber>
+		</Version>
+	</QuartusInstallation>
+	<ProjectRevision>
+		<ProjectName/>
+		<Revision/>
+	</ProjectRevision>
+	<Machine>
+		<CPUCountLogical>8</CPUCountLogical>
+		<CPUCountPhysical>1</CPUCountPhysical>
+		<CPUSpeed>1800</CPUSpeed>
+		<Hostname>DESKTOP-DPKORI4</Hostname>
+		<OS>Windows Vista</OS>
+		<OSAddressBits>64</OSAddressBits>
+		<OSVersion>6.2</OSVersion>
+		<Platform>windows</Platform>
+		<ScreenResolution>unknown</ScreenResolution>
+		<TotalPhysicalRAM>4095</TotalPhysicalRAM>
+		<TotalVirtualRAM>0</TotalVirtualRAM>
+		<NIC>
+			<Address>a87d12043939</Address>
+		</NIC>
+		<NIC>
+			<Address>00ff88133ec7</Address>
+		</NIC>
+		<NIC>
+			<Address>ca22a2d9581a</Address>
+		</NIC>
+		<NIC>
+			<Address>a87d12043936</Address>
+		</NIC>
+		<NIC>
+			<Address>aa7d12043935</Address>
+		</NIC>
+	</Machine>
+</ProgramExecution>
+

@@ -1,0 +1,338 @@
+Analysis & Synthesis report for FIFO_TEST
+Tue Nov 26 11:30:36 2019
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: FIFO_REG:inst
+ 11. Parameter Settings for User Entity Instance: scan_led3:inst3|counter4:inst|74161:inst
+ 12. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov 26 11:30:35 2019        ;
+; Quartus II Version                 ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
+; Revision Name                      ; FIFO_TEST                                    ;
+; Top-level Entity Name              ; FIFO_TEST                                    ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 80                                           ;
+;     Total combinational functions  ; 64                                           ;
+;     Dedicated logic registers      ; 31                                           ;
+; Total registers                    ; 31                                           ;
+; Total pins                         ; 22                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EP2C5T144C8        ;                    ;
+; Top-level entity name                                        ; FIFO_TEST          ; FIFO_TEST          ;
+; Family name                                                  ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; DSP Block Balancing                                          ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Timing-Driven Synthesis                                      ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                  ; Off                ; Off                ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; SDC constraint protection                                    ; Off                ; Off                ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                  ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------+
+; ../FIFO_REG/FIFO_REG.vhd         ; yes             ; User VHDL File                           ; D:/quartas_workspace/FIFO_REG/FIFO_REG.vhd                    ;
+; ../FIFO_REG/FIFO_TEST.bdf        ; yes             ; User Block Diagram/Schematic File        ; D:/quartas_workspace/FIFO_REG/FIFO_TEST.bdf                   ;
+; scan_led3.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; d:/quartas_workspace/scan_led3/scan_led3.bdf                  ;
+; mux7.vhd                         ; yes             ; Auto-Found VHDL File                     ; d:/quartas_workspace/scan_led3/mux7.vhd                       ;
+; 7449.bdf                         ; yes             ; Megafunction                             ; d:/program files/quartus/libraries/others/maxplus2/7449.bdf   ;
+; mux4_3_1.vhd                     ; yes             ; Auto-Found VHDL File                     ; d:/quartas_workspace/scan_led3/mux4_3_1.vhd                   ;
+; counter4.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; d:/quartas_workspace/scan_led3/counter4.bdf                   ;
+; 74161.tdf                        ; yes             ; Megafunction                             ; d:/program files/quartus/libraries/others/maxplus2/74161.tdf  ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; d:/program files/quartus/libraries/megafunctions/aglobal.inc  ;
+; f74161.bdf                       ; yes             ; Megafunction                             ; d:/program files/quartus/libraries/others/maxplus2/f74161.bdf ;
+; decoder2-3.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; d:/quartas_workspace/scan_led3/decoder2-3.bdf                 ;
+; 74139.bdf                        ; yes             ; Megafunction                             ; d:/program files/quartus/libraries/others/maxplus2/74139.bdf  ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 80    ;
+;                                             ;       ;
+; Total combinational functions               ; 64    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 42    ;
+;     -- 3 input functions                    ; 10    ;
+;     -- <=2 input functions                  ; 12    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 61    ;
+;     -- arithmetic mode                      ; 3     ;
+;                                             ;       ;
+; Total registers                             ; 31    ;
+;     -- Dedicated logic registers            ; 31    ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 22    ;
+; Maximum fan-out node                        ; Clock ;
+; Maximum fan-out                             ; 28    ;
+; Total fan-out                               ; 328   ;
+; Average fan-out                             ; 2.80  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                    ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
+; |FIFO_TEST                 ; 64 (0)            ; 31 (0)       ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |FIFO_TEST                                                     ; work         ;
+;    |FIFO_REG:inst|         ; 30 (30)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|FIFO_REG:inst                                       ; work         ;
+;    |scan_led3:inst3|       ; 34 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3                                     ; work         ;
+;       |7449:inst5|         ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|7449:inst5                          ; work         ;
+;       |counter4:inst|      ; 2 (0)             ; 3 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|counter4:inst                       ; work         ;
+;          |74161:inst|      ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|counter4:inst|74161:inst            ; work         ;
+;             |f74161:sub|   ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|counter4:inst|74161:inst|f74161:sub ; work         ;
+;       |decoder2-3:inst1|   ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|decoder2-3:inst1                    ; work         ;
+;          |74139:inst|      ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|decoder2-3:inst1|74139:inst         ; work         ;
+;       |mux4_3_1:inst2|     ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|mux4_3_1:inst2                      ; work         ;
+;       |mux7:inst4|         ; 20 (20)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |FIFO_TEST|scan_led3:inst3|mux7:inst4                          ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; FIFO_REG:inst|o_RData[0]~en           ; Lost fanout        ;
+; FIFO_REG:inst|o_RData[1]~en           ; Lost fanout        ;
+; FIFO_REG:inst|o_RData[2]~en           ; Lost fanout        ;
+; FIFO_REG:inst|o_RData[3]~en           ; Lost fanout        ;
+; Total Number of Removed Registers = 4 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 31    ;
+; Number of registers using Synchronous Clear  ; 3     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 2     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 27    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |FIFO_TEST|FIFO_REG:inst|wr_index[0]              ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |FIFO_TEST|FIFO_REG:inst|Qsize[0]                 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 2 LEs                ; 6 LEs                  ; Yes        ; |FIFO_TEST|FIFO_REG:inst|rd_index[0]              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |FIFO_TEST|scan_led3:inst3|mux4_3_1:inst2|dout[3] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FIFO_REG:inst ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; wid            ; 4     ; Signed Integer                    ;
+; dep            ; 4     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scan_led3:inst3|counter4:inst|74161:inst ;
++------------------------+------------+-------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                            ;
++------------------------+------------+-------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                         ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                    ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                  ;
++------------------------+------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Nov 26 11:30:30 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FIFO_TEST -c FIFO_TEST
+Info: Found 2 design units, including 1 entities, in source file ../FIFO_REG/FIFO_REG.vhd
+    Info: Found design unit 1: FIFO_REG-behav
+    Info: Found entity 1: FIFO_REG
+Info: Found 1 design units, including 1 entities, in source file ../FIFO_REG/FIFO_TEST.bdf
+    Info: Found entity 1: FIFO_TEST
+Info: Elaborating entity "FIFO_TEST" for the top level hierarchy
+Info: Elaborating entity "FIFO_REG" for hierarchy "FIFO_REG:inst"
+Warning (10540): VHDL Signal Declaration warning at FIFO_REG.vhd(41): used explicit default value for signal "tmp" because signal was never assigned a value
+Warning: Using design file ../scan_led3/scan_led3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: scan_led3
+Info: Elaborating entity "scan_led3" for hierarchy "scan_led3:inst3"
+Warning: Using design file ../scan_led3/mux7.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: mux7-opera
+    Info: Found entity 1: mux7
+Info: Elaborating entity "mux7" for hierarchy "scan_led3:inst3|mux7:inst4"
+Warning (10492): VHDL Process Statement warning at mux7.vhd(22): signal "qin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "7449" for hierarchy "scan_led3:inst3|7449:inst5"
+Info: Elaborated megafunction instantiation "scan_led3:inst3|7449:inst5"
+Warning: Using design file ../scan_led3/mux4_3_1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: mux4_3_1-rtl
+    Info: Found entity 1: mux4_3_1
+Info: Elaborating entity "mux4_3_1" for hierarchy "scan_led3:inst3|mux4_3_1:inst2"
+Warning: Using design file ../scan_led3/counter4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: counter4
+Info: Elaborating entity "counter4" for hierarchy "scan_led3:inst3|counter4:inst"
+Info: Elaborating entity "74161" for hierarchy "scan_led3:inst3|counter4:inst|74161:inst"
+Info: Elaborated megafunction instantiation "scan_led3:inst3|counter4:inst|74161:inst"
+Info: Elaborating entity "f74161" for hierarchy "scan_led3:inst3|counter4:inst|74161:inst|f74161:sub"
+Info: Elaborated megafunction instantiation "scan_led3:inst3|counter4:inst|74161:inst|f74161:sub", which is child of megafunction instantiation "scan_led3:inst3|counter4:inst|74161:inst"
+Warning: Using design file ../scan_led3/decoder2-3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: decoder2-3
+Info: Elaborating entity "decoder2-3" for hierarchy "scan_led3:inst3|decoder2-3:inst1"
+Info: Elaborating entity "74139" for hierarchy "scan_led3:inst3|decoder2-3:inst1|74139:inst"
+Info: Elaborated megafunction instantiation "scan_led3:inst3|decoder2-3:inst1|74139:inst"
+Info: Ignored 1 buffer(s)
+    Info: Ignored 1 CARRY buffer(s)
+Warning: Tri-state node(s) do not directly drive top-level pin(s)
+    Warning: Converted tri-state buffer "FIFO_REG:inst|o_RData[0]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "FIFO_REG:inst|o_RData[1]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "FIFO_REG:inst|o_RData[2]" feeding internal logic into a wire
+    Warning: Converted tri-state buffer "FIFO_REG:inst|o_RData[3]" feeding internal logic into a wire
+Info: Found 1 instances of uninferred RAM logic
+    Info: RAM logic "FIFO_REG:inst|Queue" is uninferred due to inappropriate RAM size
+Info: 4 registers lost all their fanouts during netlist optimizations. The first 4 are displayed below.
+    Info: Register "FIFO_REG:inst|o_RData[0]~en" lost all its fanouts during netlist optimizations.
+    Info: Register "FIFO_REG:inst|o_RData[1]~en" lost all its fanouts during netlist optimizations.
+    Info: Register "FIFO_REG:inst|o_RData[2]~en" lost all its fanouts during netlist optimizations.
+    Info: Register "FIFO_REG:inst|o_RData[3]~en" lost all its fanouts during netlist optimizations.
+Info: Implemented 102 device resources after synthesis - the final resource count might be different
+    Info: Implemented 9 input pins
+    Info: Implemented 13 output pins
+    Info: Implemented 80 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 258 megabytes
+    Info: Processing ended: Tue Nov 26 11:30:36 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:04
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 23 16:03:02 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : slowDown
+Top-level Entity Name : slowDown
+Family : Cyclone II
+Total logic elements : 11
+    Total combinational functions : 11
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 2
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

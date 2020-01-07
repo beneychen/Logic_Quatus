@@ -1,0 +1,12 @@
+Fitter Status : Successful - Thu Oct 31 13:57:44 2019
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : dds_top3
+Top-level Entity Name : dds_top3
+Family : Cyclone
+Device : EP1C6Q240C8
+Timing Models : Final
+Total logic elements : 25 / 5,980 ( < 1 % )
+Total pins : 9 / 185 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 92,160 ( 9 % )
+Total PLLs : 0 / 2 ( 0 % )

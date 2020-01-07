@@ -1,0 +1,45 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x0a4f98b0: edt_sme + 0x198b0 (??0SME_COMPILE_GENERATOR@@QAE@XZ + 0xcc60)
+	</callstack>
+	<error>Access Violation at 0X28746867</error>
+	<date>Mon Nov 11 16:00:09 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x28746867:
+	0x0e741d3c: edt_sme + 0x51d3c (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x778c)
+	0x76cd47e8: USER32 + 0x247e8 (GetWindowLongW + 0x268)
+	0x76863fe7: GDI32 + 0x3fe7 (GdiReleaseDC + 0x17)
+	0x7333b995: mfc90 + 0x2b995
+	0x750072db: win32u + 0x72db (NtUserReleaseDC + 0xb)
+	0x76ccf0f7: USER32 + 0x1f0f7 (ReleaseDC + 0x27)
+	0x7336acd6: mfc90 + 0x5acd6
+	0x0e7586ae: edt_sme + 0x686ae (??1CxIOFile@@UAE@XZ + 0xcce)
+	0x0e752bb7: edt_sme + 0x62bb7 (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x18607)
+	0x0e742791: edt_sme + 0x52791 (??1SME_COMPILE_GENERATOR@@QAE@XZ + 0x81e1)
+	0x0e75af41: edt_sme + 0x6af41 (??1CxIOFile@@UAE@XZ + 0x3561)
+	0x0e758f81: edt_sme + 0x68f81 (??1CxIOFile@@UAE@XZ + 0x15a1)
+	0x73341283: mfc90 + 0x31283
+	</callstack>
+	<error>Current editor: , STED, RPW</error>
+	<date>Mon Nov 11 16:58:29 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X28746867
+Current editor: , STED, RPW
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

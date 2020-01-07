@@ -1,0 +1,40 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x69526d6f:
+	0x0ad8d2c5: edt_wed + 0x3d2c5 (edt_wed_dll_get_template_classes + 0x267e5)
+	0x0ad8a988: edt_wed + 0x3a988 (edt_wed_dll_get_template_classes + 0x23ea8)
+	0x72de1283: mfc90 + 0x31283
+	0x72de0e30: mfc90 + 0x30e30
+	0x72ddfa0b: mfc90 + 0x2fa0b
+	0x00b600d5: resr_rpw + 0x300d5 (resr_rpw_dll_get_template_classes + 0x25f05)
+	0x7468e849: KERNEL32 + 0x1e849 (DeactivateActCtxWorker + 0x29)
+	0x72de0e19: mfc90 + 0x30e19
+	0x00b600d5: resr_rpw + 0x300d5 (resr_rpw_dll_get_template_classes + 0x25f05)
+	0x72ddfa0b: mfc90 + 0x2fa0b
+	0x72ddfc97: mfc90 + 0x2fc97
+	0x72ddda38: mfc90 + 0x2da38
+	0x7478befa: USER32 + 0x3befa (AddClipboardFormatListener + 0x49a)
+	0x747883d9: USER32 + 0x383d9 (DispatchMessageW + 0x979)
+	0x74787c8d: USER32 + 0x37c8d (DispatchMessageW + 0x22d)
+	0x7477cebf: USER32 + 0x2cebf (DispatchMessageA + 0xf)
+	0x72e1fc07: mfc90 + 0x6fc07
+	0x00fd1968: ccl_thr + 0x1968 (thr_thread_var_destroy + 0x28)
+	0x72dec869: mfc90 + 0x3c869
+	0x0044f42e: quartus + 0x4f42e (Pjm_Uninit + 0x401ee)
+	0x74688493: KERNEL32 + 0x18493 (BaseThreadInitThunk + 0x23)
+	0x77b341c7: ntdll + 0x641c7 (RtlAreBitsSet + 0x87)
+	0x77b34197: ntdll + 0x64197 (RtlAreBitsSet + 0x57)
+	0xffffffffffffffff:
+	</callstack>
+	<error>Current editor: WED, RPW</error>
+	<date>Sun Oct 13 09:45:17 2019</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X69526D6F
+Current editor: WED, RPW
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

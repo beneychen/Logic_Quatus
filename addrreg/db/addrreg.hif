@@ -1,0 +1,77 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+41
+2978
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+addrreg
+# storage
+db|addrreg.(0).cnf
+db|addrreg.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+addrreg.vhd
+b09fd2eb75956908cd11e56ec754f96
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+fwords_width
+20
+PARAMETER_SIGNED_DEC
+DEF
+pwords_width
+10
+PARAMETER_SIGNED_DEC
+DEF
+fadder_width
+24
+PARAMETER_SIGNED_DEC
+DEF
+padder_width
+10
+PARAMETER_SIGNED_DEC
+DEF
+addr_width
+10
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|program files|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+
